@@ -1,0 +1,40 @@
+windows:
+
+  # Load Gazebo and controller 
+  - name: Gazebo_controller
+    layout: tiled
+    splits:
+      - commands:
+        - source /opt/ros/noetic/setup.bash
+        - cd /home/lijiaqian/ws/telemanipulationrosrun pivot_control input_transformation_node
+        - source /home/lijiaqian/ws/telemanipulation/devel/setup.bash
+        - roslaunch hera_description hera_description.launch 
+      - commands:
+        - source /opt/ros/noetic/setup.bash
+        - cd /home/lijiaqian/ws/telemanipulation
+        - source /home/lijiaqian/ws/telemanipulation/devel/setup.bash
+        - roslaunch hera_control hera_control.launch  
+     
+    delay: 3
+
+  
+  # Load ros1_bridge
+  - name: pivot_control
+    layout: tiled
+    splits:
+      - commands:
+        - cd /home/lijiaqian/ws/telemanipulation
+        - source /home/lijiaqian/ws/telemanipulation/devel/setup.bash 
+        - rosrun pivot_control input_transformation_node
+        
+      - commands:
+        - cd /home/lijiaqian/ws/telemanipulation
+        - source /home/lijiaqian/ws/telemanipulation/devel/setup.bash 
+        
+      - commands:
+        - cd /home/lijiaqian/ws/telemanipulation
+        - source /home/lijiaqian/ws/telemanipulation/devel/setup.bash 
+        - roslaunch pivot_control main.launch
+
+
+

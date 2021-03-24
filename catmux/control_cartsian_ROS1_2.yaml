@@ -1,0 +1,42 @@
+windows:
+
+  # Load Gazebo and controller 
+  - name: ROS1
+    layout: tiled
+    splits:
+      - commands:
+        - source /opt/ros/noetic/setup.bash
+        - source /home/lijiaqian/ws/prak_ros1_ws/devel/setup.bash
+        - roslaunch hera_control hera_control.launch 
+      - commands:
+        - source /home/lijiaqian/ws/prak_ros1_ws/devel/setup.bash
+        - roslaunch hera_description hera_description_upload.launch  
+      - commands:
+        - source /home/lijiaqian/ws/prak_ros1_ws/devel/setup.bash 
+        - rostopic echo /panda/trajectory_controller/follow_joint_trajectory/goal
+    delay: 5
+
+  
+  # Load ros1_bridge
+  - name: Bridge
+    splits:
+      - commands:
+        - source /opt/ros/noetic/setup.bash
+        - source /opt/ros/foxy/setup.bash
+        - ros2 run ros1_bridge dynamic_bridge --bridge-all-topic
+    delay: 2
+
+  # Load servo
+  - name: ROS2
+    splits:
+      - commands:
+        - source /opt/ros/foxy/setup.bash
+        - source /home/lijiaqian/prak_ws/install/setup.bash
+        - ros2 launch telemanipulator control_ros2.launch.py
+      - commands:
+        - source /home/lijiaqian/prak_ws/install/setup.bash
+        - ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+
+
+
