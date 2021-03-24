@@ -25,3 +25,10 @@ rosgragh_ROS2
 Demo
 https://user-images.githubusercontent.com/65122353/112339433-f01ce600-8cbf-11eb-8392-9a188ec65aee.mp4
 
+### Control w.r.t pivot coordinate ###
+The simulation occurs also in the Gazebo based on ROS1 and ROS2. This time the input is in the form of a four elements vector (pan->pitch, tilt->yaw, spin->roll, depth->insertion). The end effector of the robot moves w.r.t reference coordinate at the pivot point.
+![The-forceps-working-through-a-restrained-pivot-point-was-controlled-by-five-axes](https://user-images.githubusercontent.com/65122353/112367237-f8821a80-8cd9-11eb-8733-afe5e7066e31.png)
+
+
+## Usage
+
