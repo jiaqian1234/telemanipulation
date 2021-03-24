@@ -1,0 +1,113 @@
+[0.055s] Invoking command in '/home/lijiaqian/prak_ws/build/pivot_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3
+[0.494s] [  3%] Built target pivot_msg__cpp
+[0.644s] [ 12%] Built target pivot_msg__rosidl_generator_c
+[0.827s] [ 22%] Built target pivot_msg__rosidl_typesupport_fastrtps_cpp
+[1.042s] [ 32%] Built target pivot_msg__rosidl_typesupport_introspection_cpp
+[1.163s] [ 41%] Built target pivot_msg__rosidl_typesupport_fastrtps_c
+[1.279s] [ 51%] Built target pivot_msg__rosidl_typesupport_introspection_c
+[1.395s] [ 61%] Built target pivot_msg__rosidl_typesupport_c
+[1.442s] [ 70%] Built target pivot_msg__rosidl_typesupport_cpp
+[1.489s] [ 70%] Built target pivot_msg
+[1.536s] [ 74%] Built target pivot_msg__py
+[1.584s] [ 80%] Built target pivot_msg__python
+[1.625s] [ 87%] Built target pivot_msg__rosidl_typesupport_introspection_c__pyext
+[1.675s] [ 93%] Built target pivot_msg__rosidl_typesupport_c__pyext
+[1.718s] [100%] Built target pivot_msg__rosidl_typesupport_fastrtps_c__pyext
+[1.739s] Invoked command in '/home/lijiaqian/prak_ws/build/pivot_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3
+[1.904s] Invoking command in '/home/lijiaqian/prak_ws/build/pivot_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lijiaqian/prak_ws/build/pivot_msg
+[1.923s] -- Install configuration: ""
+[1.923s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/rosidl_interfaces/pivot_msg
+[1.923s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.923s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/pivot.h
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.h
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__functions.c
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__functions.h
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__struct.h
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_generator_c__visibility_control.h
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/library_path.sh
+[1.924s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/library_path.dsv
+[1.926s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_generator_c.so
+[1.927s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.928s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.928s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.928s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_fastrtps_c.h
+[1.928s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.929s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_fastrtps_c.so
+[1.929s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.929s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.929s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.930s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/dds_fastrtps
+[1.931s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_fastrtps_cpp.hpp
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_fastrtps_cpp.so
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_introspection_c.h
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.c
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_introspection_c.so
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_c.so
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.932s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/pivot.hpp
+[1.933s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.934s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__traits.hpp
+[1.934s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__struct.hpp
+[1.934s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__builder.hpp
+[1.934s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg
+[1.934s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg
+[1.935s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail
+[1.935s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.cpp
+[1.935s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_introspection_cpp.hpp
+[1.935s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_introspection_cpp.so
+[1.936s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_cpp.so
+[1.936s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/pythonpath.sh
+[1.936s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/pythonpath.dsv
+[1.936s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/__init__.py
+[1.979s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg
+[1.980s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/_pivot_s.c
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/__init__.py
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/_pivot.py
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__python.so
+[1.981s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/msg/Pivot.idl
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/msg/Pivot.msg
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/package_run_dependencies/pivot_msg
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/parent_prefix_path/pivot_msg
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/ament_prefix_path.sh
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/ament_prefix_path.dsv
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/path.sh
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/path.dsv
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.bash
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.sh
+[1.982s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.zsh
+[1.983s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.dsv
+[1.983s] -- Installing: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/package.dsv
+[1.989s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/packages/pivot_msg
+[1.990s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cExport.cmake
+[1.990s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cExport-noconfig.cmake
+[1.990s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cExport.cmake
+[1.990s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.991s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cExport.cmake
+[1.995s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cExport-noconfig.cmake
+[1.995s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cppExport.cmake
+[1.995s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cppExport.cmake
+[1.995s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.995s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cppExport.cmake
+[1.997s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[1.997s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake-extras.cmake
+[1.997s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.998s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[2.005s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_targets-extras.cmake
+[2.005s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.005s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.005s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.005s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msgConfig.cmake
+[2.006s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msgConfig-version.cmake
+[2.006s] -- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/package.xml
+[2.006s] Invoked command in '/home/lijiaqian/prak_ws/build/pivot_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lijiaqian/prak_ws/build/pivot_msg

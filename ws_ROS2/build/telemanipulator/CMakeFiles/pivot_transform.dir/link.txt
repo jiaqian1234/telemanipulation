@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libpivot_transform.so -o libpivot_transform.so CMakeFiles/pivot_transform.dir/src/homogeneous_matrix.cpp.o CMakeFiles/pivot_transform.dir/src/pivot_transformation.cpp.o 

@@ -1,0 +1,11 @@
+[ 33%] Built target pivot_transform
+[ 55%] Built target key_to_servo
+[35m[1mScanning dependencies of target pivot_to_twist[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o[0m
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: No child processes.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/pivot_to_twist.dir/all] Error 2
+make: *** wait: No child processes.  Stop.
+make: *** Waiting for unfinished jobs....
+make: *** wait: No child processes.  Stop.

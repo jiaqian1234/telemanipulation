@@ -1,0 +1,8 @@
+prefix=/home/lijiaqian/ws/prak_ros1_ws/devel
+
+Name: hera_moveit_config
+Description: Description of hera_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

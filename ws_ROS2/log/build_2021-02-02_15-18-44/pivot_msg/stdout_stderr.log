@@ -1,0 +1,9 @@
+[  3%] Built target pivot_msg__cpp
+[ 12%] Built target pivot_msg__rosidl_generator_c
+make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/build.make:123: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/build.make:110: CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/depend] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:464: CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/all] Interrupt
+make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/build.make:115: CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/depend] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:437: CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

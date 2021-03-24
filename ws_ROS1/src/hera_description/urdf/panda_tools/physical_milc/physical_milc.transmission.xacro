@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="physical_milc_transmission" params="hardware_interface laparoscope_name prefix">
+
+    <transmission name="${prefix}_${laparoscope_name}_optics_tran_1">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}_${laparoscope_name}_optics_joint">
+	<hardwareInterface>hardware_interface/${hardware_interface}</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}_${laparoscope_name}_optics_motor">
+	<hardwareInterface>${hardware_interface}</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+  </xacro:macro>
+
+</robot>
+

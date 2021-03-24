@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find hera_description)/urdf/panda/panda.gazebo.xacro" />
+  <!-- Import Transmissions -->
+  <xacro:include filename="$(find hera_description)/urdf/panda/panda.transmission.xacro" />
+
+ <!-- some constants taken from rll_sdk
+  <xacro:property name="safety_controller_k_pos" value="100" />
+  <xacro:property name="safety_controller_k_vel" value="2" />
+  <xacro:property name="joint_damping" value="0.5" />
+  <xacro:property name="max_effort" value="300"/>
+  <xacro:property name="max_velocity" value="10"/>
+ -->
+  <xacro:property name="joint_damping" value="1.0" />
+
+  <xacro:macro name="panda" params="parent hardware_interface robot_name *origin
+    joint_1_lower_limit:=-2.8973 joint_1_upper_limit:=2.8973
+    joint_2_lower_limit:=-1.7628 joint_2_upper_limit:=1.7628
+    joint_3_lower_limit:=-2.8973 joint_3_upper_limit:=2.8973
+    joint_4_lower_limit:=-3.0718 joint_4_upper_limit:=-0.0698
+    joint_5_lower_limit:=-2.8973 joint_5_upper_limit:=2.8973
+    joint_6_lower_limit:=-0.0175 joint_6_upper_limit:=3.7525
+    joint_7_lower_limit:=-2.8973 joint_7_upper_limit:=2.8973">
+
+    <!--joint between {parent} and link_0-->
+    <joint name="${parent}_${robot_name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${robot_name}_link_0"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 0 -->
+    <link name="${robot_name}_link_0">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/panda/visual/link0.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link0.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="3.06"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 0 and link 1 -->
+    <joint name="${robot_name}_joint_1" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_1_lower_limit}" soft_upper_limit="${joint_1_upper_limit}"/>
+      <origin rpy="0 0 0" xyz="0 0 0.333"/>
+      <parent link="${robot_name}_link_0"/>
+      <child link="${robot_name}_link_1"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="87" lower="${joint_1_lower_limit}" upper="${joint_1_upper_limit}" velocity="2.1750"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 1 -->
+    <link name="${robot_name}_link_1">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/panda/visual/link1.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link1.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.34"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 1 and link 2 -->
+    <joint name="${robot_name}_joint_2" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_2_lower_limit}" soft_upper_limit="${joint_2_upper_limit}"/>
+      <origin rpy="${-pi/2} 0 0" xyz="0 0 0"/>
+      <parent link="${robot_name}_link_1"/>
+      <child link="${robot_name}_link_2"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="87" lower="${joint_2_lower_limit}" upper="${joint_2_upper_limit}" velocity="2.1750"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 2 -->
+    <link name="${robot_name}_link_2">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link2.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link2.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.36"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 2 and link 3 -->
+    <joint name="${robot_name}_joint_3" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_3_lower_limit}" soft_upper_limit="${joint_3_upper_limit}"/>
+      <origin rpy="${pi/2} 0 0" xyz="0 -0.316 0"/>
+      <parent link="${robot_name}_link_2"/>
+      <child link="${robot_name}_link_3"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="87" lower="${joint_3_lower_limit}" upper="${joint_3_upper_limit}" velocity="2.1750"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 3 -->
+    <link name="${robot_name}_link_3">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link3.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link3.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.38"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 3 and link 4 -->
+    <joint name="${robot_name}_joint_4" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_4_lower_limit}" soft_upper_limit="${joint_4_upper_limit}"/>
+      <origin rpy="${pi/2} 0 0" xyz="0.0825 0 0"/>
+      <parent link="${robot_name}_link_3"/>
+      <child link="${robot_name}_link_4"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="87" lower="${joint_4_lower_limit}" upper="${joint_4_upper_limit}" velocity="2.1750"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 4 -->
+    <link name="${robot_name}_link_4">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link4.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link4.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.43"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 4 and link 5 -->
+    <joint name="${robot_name}_joint_5" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_5_lower_limit}" soft_upper_limit="${joint_5_upper_limit}"/>
+      <origin rpy="${-pi/2} 0 0" xyz="-0.0825 0.384 0"/>
+      <parent link="${robot_name}_link_4"/>
+      <child link="${robot_name}_link_5"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="12" lower="${joint_5_lower_limit}" upper="${joint_5_upper_limit}" velocity="2.6100"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+    
+    <!-- link 5 -->
+    <link name="${robot_name}_link_5">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link5.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link5.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="3.5"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 5 and link 6 -->
+    <joint name="${robot_name}_joint_6" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_6_lower_limit}" soft_upper_limit="${joint_6_upper_limit}"/>
+      <origin rpy="${pi/2} 0 0" xyz="0 0 0"/>
+      <parent link="${robot_name}_link_5"/>
+      <child link="${robot_name}_link_6"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="12" lower="${joint_6_lower_limit}" upper="${joint_6_upper_limit}" velocity="2.6100"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 6 -->
+    <link name="${robot_name}_link_6">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link6.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link6.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.47"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 6 and link 7 -->
+    <joint name="${robot_name}_joint_7" type="revolute">
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="${joint_7_lower_limit}" soft_upper_limit="${joint_7_upper_limit}"/>
+      <origin rpy="${pi/2} 0 0" xyz="0.088 0 0"/>
+      <parent link="${robot_name}_link_6"/>
+      <child link="${robot_name}_link_7"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="12" lower="${joint_7_lower_limit}" upper="${joint_7_upper_limit}" velocity="2.6100"/>
+
+      <dynamics damping="${joint_damping}" />
+    </joint>
+
+    <!-- link 7 -->
+    <link name="${robot_name}_link_7">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/visual/link7.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/panda/collision/link7.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.45"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between link 7 and end-effector -->
+    <joint name="${robot_name}_joint_ee" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0.107"/>
+      <parent link="${robot_name}_link_7"/>
+      <child link="${robot_name}_link_ee"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+    <!-- end-effector link -->
+    <link name="${robot_name}_link_ee">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.0"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+
+    <!--Extensions -->
+    <xacro:panda_gazebo robot_name="${robot_name}" />
+    <xacro:panda_transmission hardware_interface="${hardware_interface}" robot_name="${robot_name}"/>
+
+
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
+  <arg name="load_robot_description" default="false"/>
+  <arg name="hardware_interface" default="EffortJointInterface"/>
+  <arg name="robot_name" default="panda"/>
+  <!-- The name of the parameter under which the URDF is loaded -->
+  <arg name="robot_description" default="robot_description"/>
+  <arg name="description_file" default ="$(find hera_description)/urdf/hera_main.urdf.xacro" />
+
+  <!-- Loads the URDF with the given hardware interface and robot name into the ROS Parameter Server -->
+  <group if="$(arg load_robot_description)">
+    <include file="$(find hera_description)/launch/hera_description_upload.launch">
+      <arg name="hardware_interface" value="$(arg hardware_interface)"/>
+      <arg name="robot_name" value="$(arg robot_name)" />
+      <arg name="description_file" value="$(arg description_file)" />
+    </include>
+  </group>
+
+  <!-- The semantic description that corresponds to the URDF -->
+  <param name="$(arg robot_description)_semantic" command="$(find xacro)/xacro --inorder '$(find hera_moveit_config)/config/hera_operating_theatre.srdf.xacro' robot_name:=$(arg robot_name)" />
+
+  <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
+  <group ns="$(arg robot_description)_kinematics">
+    <rosparam command="load" file="$(find hera_moveit_config)/config/kinematics.yaml"/>
+  </group>
+
+</launch>

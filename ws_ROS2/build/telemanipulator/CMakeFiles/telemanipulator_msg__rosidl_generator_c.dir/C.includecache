@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lijiaqian/prak_ws/build/telemanipulator/rosidl_generator_c/telemanipulator/msg/detail/pivot__functions.c
+telemanipulator/msg/detail/pivot__functions.h
+/home/lijiaqian/prak_ws/build/telemanipulator/rosidl_generator_c/telemanipulator/msg/detail/telemanipulator/msg/detail/pivot__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+
+rosidl_generator_c/telemanipulator/msg/detail/pivot__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/telemanipulator/msg/detail/rosidl_runtime_c/visibility_control.h
+telemanipulator/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/telemanipulator/msg/detail/telemanipulator/msg/rosidl_generator_c__visibility_control.h
+telemanipulator/msg/detail/pivot__struct.h
+rosidl_generator_c/telemanipulator/msg/detail/telemanipulator/msg/detail/pivot__struct.h
+
+rosidl_generator_c/telemanipulator/msg/detail/pivot__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/telemanipulator/msg/rosidl_generator_c__visibility_control.h
+

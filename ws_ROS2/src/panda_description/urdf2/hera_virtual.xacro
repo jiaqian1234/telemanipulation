@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="hera_virtual">
+
+    <!-- virtual walls -->
+
+    <joint name="wall_joint_head" type="fixed">
+      <parent link="world" />
+      <child link="wall_head" />
+      <origin xyz="1 0 1.4025" rpy="0 0 0"/>
+    </joint>
+    <joint name="wall_joint_feet" type="fixed">
+      <parent link="world" />
+      <child link="wall_feet" />
+      <origin xyz="-0.885 0 1.4025" rpy="0 0 0"/>
+    </joint>
+    <joint name="wall_joint_left" type="fixed">
+      <parent link="world" />
+      <child link="wall_left" />
+      <origin xyz="0 -0.3267 1.4025" rpy="0 0 0"/>
+    </joint>
+    <joint name="wall_joint_right" type="fixed">
+      <parent link="world" />
+      <child link="wall_right" />
+      <origin xyz="0 1.30 1.4025" rpy="0 0 0"/>
+    </joint>
+    <joint name="wall_joint_top" type="fixed">
+      <parent link="world" />
+      <child link="wall_top" />
+      <origin xyz="0 0.0 2.05" rpy="0 0 0"/>
+    </joint>
+
+
+    <link name="wall_head">
+      <visual>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.01 1.6267 1.15" rpy="0 0 0"/>
+        </geometry>
+        <material name="transparent" />
+      </visual>
+      <collision>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.01 1.6267 1.15" rpy="0 0 0"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="wall_feet">
+      <visual>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.01 1.6267 1.15" rpy="0 0 0"/>
+        </geometry>
+        <material name="transparent" />
+      </visual>
+      <collision>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.01 1.6267 1.15" rpy="0 0 0"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="wall_left">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 0.01 1.15" rpy="0 0 0"/>
+        </geometry>
+        <material name="transparent" />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 0.01 1.15" rpy="0 0 0"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="wall_right">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 0.01 1.15" rpy="0 0 0"/>
+        </geometry>
+        <material name="transparent" />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 0.01 1.15" rpy="0 0 0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wall_top">
+      <visual>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 1.6267 0.01" rpy="0 0 0"/>
+        </geometry>
+        <material name="transparent" />
+      </visual>
+      <collision>
+        <origin xyz="0 0.4267 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.7 1.6267 0.01" rpy="0 0 0"/>
+        </geometry>
+      </collision>
+    </link>
+
+
+      <material name="transparent">
+        <color rgba="0.8784 0.8745 0.8588 0.3"/>
+      </material>
+
+  </xacro:macro>
+
+</robot>
+

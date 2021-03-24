@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="milc_gazebo" params="laparoscope_name prefix">
+    
+    <!-- Load Gazebo lib and set the robot namespace
+    <gazebo>
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <legacyModeNS>true</legacyModeNS>
+      </plugin>
+    </gazebo -->
+
+    <!-- camera head link -->
+    <gazebo reference="${prefix}_${laparoscope_name}_head">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- optics link -->
+    <gazebo reference="${prefix}_${laparoscope_name}_optics">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- end effector link -->
+    <gazebo reference="${prefix}_${laparoscope_name}_link_ee">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- Flange link -->
+    <gazebo reference="${prefix}_${laparoscope_name}_link_optics_flange">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>
+

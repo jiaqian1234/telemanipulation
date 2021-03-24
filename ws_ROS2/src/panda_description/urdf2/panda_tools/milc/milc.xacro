@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find hera_description)/urdf/panda_tools/milc/milc.gazebo.xacro" />
+  <!-- Import Transmissions -->
+  <xacro:include filename="$(find hera_description)/urdf/panda_tools/milc/milc.transmission.xacro" />
+
+  <xacro:macro name="milc" params="parent prefix hardware_interface laparoscope_name">
+
+    <!--joint between {parent} and camera head-->
+    <joint name="${parent}_${laparoscope_name}_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${prefix}_${laparoscope_name}_head"/>
+      <origin xyz="0 0 0" rpy="0 0 ${0.25*pi}"/>
+    </joint>
+
+    <!-- camera head link -->
+    <link name="${prefix}_${laparoscope_name}_head">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/milc/visual/milc_head_colorized.dae" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/milc/collision/milc_head_convex.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+      <!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.0001"/>
+        <inertia ixx="0.0" ixy="0" ixz="0" iyy="0.0" iyz="0" izz="0.0"/>
+      </inertial>
+    </link>
+
+    <!-- joint between camera head and optics -->
+    <joint name="${prefix}_${laparoscope_name}_optics_joint" type="revolute">
+	<!-- TODO: change these values!! -->
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/>
+      <origin rpy="0 0 0" xyz="0 0 0.133551"/>
+      <parent link="${prefix}_${laparoscope_name}_head"/>
+      <child link="${prefix}_${laparoscope_name}_optics"/>
+      <axis xyz="0 0 1"/>
+	<!-- TODO: change these values!! -->
+      <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/>
+    </joint>
+
+    <!-- optics link -->
+    <link name="${prefix}_${laparoscope_name}_optics">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/milc/visual/milc_optics_colorized.dae" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/milc/collision/milc_optics_convex.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+	<!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.0001"/>
+        <inertia ixx="0.0" ixy="0" ixz="0" iyy="0.0" iyz="0" izz="0.0"/>
+      </inertial>
+    </link>
+
+    <!-- Flange link -->
+    <joint name="${prefix}_${laparoscope_name}_optics_flange_joint" type="fixed">
+      <parent link="${prefix}_${laparoscope_name}_head" />
+      <child link="${prefix}_${laparoscope_name}_link_optics_flange" />
+      <!-- TODO: change me -->
+      <origin rpy="0 0 0" xyz="0 0 0.133551"/>
+    </joint>
+    <link name="${prefix}_${laparoscope_name}_link_optics_flange">
+      <!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.0001"/>
+        <inertia ixx="0.0" ixy="0" ixz="0" iyy="0.0" iyz="0" izz="0.0"/>
+      </inertial>
+    </link>
+
+    <!-- TCP link -->
+    <joint name="${prefix}_${laparoscope_name}_ee_joint" type="fixed">
+      <parent link="${prefix}_${laparoscope_name}_optics" />
+      <child link="${prefix}_${laparoscope_name}_link_ee" />
+      <!-- TODO: change me -->
+      <origin xyz="0 0 0.385138" rpy="0 0 0"/>
+    </joint>
+    <link name="${prefix}_${laparoscope_name}_link_ee">
+      <!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.0001"/>
+        <inertia ixx="0.0" ixy="0" ixz="0" iyy="0.0" iyz="0" izz="0.0"/>
+      </inertial>
+    </link>
+
+    <!-- view cone link -->
+    <joint name="${prefix}_${laparoscope_name}_cone_joint" type="fixed">
+      <parent link="${prefix}_${laparoscope_name}_link_ee" />
+      <child link="${prefix}_${laparoscope_name}_cone" />
+      <!-- TODO: change me -->
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+    </joint>
+    <link name="${prefix}_${laparoscope_name}_cone">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/milc/visual/view_cone.dae" scale="0.02 0.02 0.02"/>
+        </geometry>
+      </visual>
+      <!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.0001"/>
+        <inertia ixx="0.0" ixy="0" ixz="0" iyy="0.0" iyz="0" izz="0.0"/>
+      </inertial>
+    </link>
+
+    <!--Extensions -->
+    <xacro:milc_gazebo laparoscope_name="${laparoscope_name}" prefix="${prefix}"/>
+    <xacro:milc_transmission hardware_interface="${hardware_interface}" laparoscope_name="${laparoscope_name}" prefix="${prefix}"/>
+
+  </xacro:macro>
+
+</robot>

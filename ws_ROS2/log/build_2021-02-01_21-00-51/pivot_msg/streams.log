@@ -1,0 +1,5 @@
+[0.064s] Invoking command in '/home/lijiaqian/prak_ws/build/pivot_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3
+[0.454s] [  3%] Built target pivot_msg__cpp
+[0.542s] [ 12%] Built target pivot_msg__rosidl_generator_c
+[0.598s] make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[0.598s] make: *** [Makefile:141: all] Interrupt

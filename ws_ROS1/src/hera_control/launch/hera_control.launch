@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Launches the controllers according to the hardware interface selected -->
+
+    <arg name="hardware_interface" default="position_controllers"/>
+    <!--arg name="hardware_interface" default="effort_controllers"/-->
+    <arg name="controllers" default="panda_joint_state_controller panda_trajectory_controller"/>
+    <arg name="robot_name" default="panda" />
+
+    <!-- Loads joint controller configurations from YAML file to parameter server -->
+    <rosparam subst_value="True" file="$(find hera_control)/config/hera_control.yaml" command="load"  />
+    
+    <!-- Loads the controllers -->
+    <!-- controller must in namespace /panda load-->
+    <node name="joint_state_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+          output="screen" args="joint_state_controller trajectory_controller" ns = "/panda" />
+
+    <node pkg="controller_manager" type="spawner" name="joint_and_trajectory_controller" args="--stopped position_controller" ns = "/panda"/>
+
+    <node pkg="hera_control" type="robot_state_initializer_node" name="robot_state_initializer_node" />
+
+
+    <!-- load the trajectory_interface to convert trajectory topic in ros2 into the follow_trajectory action in ros1-->
+    <node name="trajectory_interface" pkg="hera_control" type="follow_trajectory_interface_node" ns="panda/trajectory_controller/"/>
+
+    <!-- Converts joint states to TF transforms for rviz, etc -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns = "/panda"
+          respawn="false" output="screen">
+        <param name="ignore_timestamp" type="bool" value="true"/>
+    </node>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns = "/"
+          respawn="false" output="screen">
+        <param name="ignore_timestamp" type="bool" value="true"/>
+    </node>
+
+</launch>
+

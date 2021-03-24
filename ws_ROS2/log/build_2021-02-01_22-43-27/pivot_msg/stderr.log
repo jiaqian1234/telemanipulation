@@ -1,0 +1,4 @@
+make[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+make: *** wait: No child processes.  Stop.
+make: *** Waiting for unfinished jobs....
+make: *** wait: No child processes.  Stop.

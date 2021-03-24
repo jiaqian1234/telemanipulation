@@ -1,0 +1,42 @@
+[ 33%] Built target pivot_transform
+[ 55%] Built target key_to_servo
+[ 66%] [32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library libpivot_to_twist.so[0m
+[ 77%] Built target pivot_to_twist
+[100%] Built target keyboard_as_pivot_input
+-- Install configuration: ""
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libkey_to_servo.so
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libkeyboard_as_pivot_input.so
+-- Installing: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_to_twist.so
+-- Set runtime path of "/home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_to_twist.so" to ""
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_transform.so
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/homogeneous_matrix.h
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/telemanipulator
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/pivot_transformation.h
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/controll_loop.launch.py
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/control_3.launch.py
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/control_ros2.launch.py
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config_2.yaml
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config2.yaml
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config.yaml
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/msg
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/msg/Pivot.msg
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/package_run_dependencies/telemanipulator
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/parent_prefix_path/telemanipulator
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/path.sh
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/path.dsv
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.bash
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.sh
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.zsh
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.dsv
+-- Installing: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/package.dsv
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/packages/telemanipulator
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/rclcpp_components/telemanipulator
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/cmake/telemanipulatorConfig.cmake
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/cmake/telemanipulatorConfig-version.cmake
+-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/package.xml

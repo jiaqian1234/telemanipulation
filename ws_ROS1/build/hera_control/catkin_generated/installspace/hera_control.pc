@@ -1,0 +1,8 @@
+prefix=/home/lijiaqian/ws/prak_ros1_ws/install
+
+Name: hera_control
+Description: Description of hera_control
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

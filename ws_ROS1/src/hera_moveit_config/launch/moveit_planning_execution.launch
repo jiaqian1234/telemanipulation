@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="hardware_interface" default="EffortJointInterface"/>
+  <arg name="robot_name" default="panda"/>
+  <arg name="headless" default="false"/>
+  <arg name="use_sim" default="true"/>
+  <arg name="gazebo_port" default="11345"/>
+  <arg name="description_file" default ="$(find hera_description)/urdf/hera_main.urdf.xacro" />
+  <arg name="rviz_config" default ="$(find hera_moveit_config)/launch/moveit.rviz" />
+
+  <!-- Run the robot within a Gazebo simulation and with ROS Control. -->
+  <include if="$(arg use_sim)" file="$(find hera_gazebo)/launch/hera_lab_gazebo.launch">
+    <arg name="hardware_interface" value="$(arg hardware_interface)"/>
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="load_robot_description" value="false" />
+    <arg name="headless" value="$(arg headless)" />
+    <arg name="gazebo_port" value="$(arg gazebo_port)"/>
+  </include>
+
+  <remap from="joint_states" to="$(arg robot_name)/joint_states" />
+
+  <!-- Load move_group -->
+  <include file="$(find hera_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="publish_monitored_planning_scene" value="true" />
+    <arg name="hardware_interface" value="$(arg hardware_interface)"/>
+    <arg name="robot_name" value="$(arg robot_name)"/>
+    <arg name="description_file" value="$(arg description_file)" />
+    <arg name="fake_execution" value="$(eval not use_sim)"/>
+  </include>
+
+  <include unless="$(arg use_sim)" file="$(find hera_moveit_config)/launch/fake_state.launch">
+    <arg name="robot_name" value="$(arg robot_name)"/>
+  </include>
+
+  <include unless="$(arg headless)" file="$(find hera_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="command_args" value="-d $(arg rviz_config)" />
+  </include>
+
+</launch>
+

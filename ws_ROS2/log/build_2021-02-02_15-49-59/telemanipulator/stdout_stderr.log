@@ -1,0 +1,20 @@
+[ 33%] Built target pivot_transform
+[ 55%] Built target key_to_servo
+[35m[1mScanning dependencies of target pivot_to_twist[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o[0m
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:[m[K In member function ‘[01m[Kvoid telemanipulator::PivotToTwist::twist_pub()[m[K’:
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:167:65:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[KEulerAngles[m[K’ and ‘[01m[Kint[m[K’)
+  167 | < "soll_orientation " <<  eulerAngles[01;31m[K[[m[K0] << " "<< eulerAngles[1]<<" " << eulerAngles[2] <<std::endl;
+      |                                      [01;31m[K^[m[K
+
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:167:89:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[KEulerAngles[m[K’ and ‘[01m[Kint[m[K’)
+  167 |   eulerAngles[0] << " "<< eulerAngles[01;31m[K[[m[K1]<<" " << eulerAngles[2] <<std::endl;
+      |                                      [01;31m[K^[m[K
+
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:167:112:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[KEulerAngles[m[K’ and ‘[01m[Kint[m[K’)
+  167 |  "<< eulerAngles[1]<<" " << eulerAngles[01;31m[K[[m[K2] <<std::endl;
+      |                                        [01;31m[K^[m[K
+
+make[2]: *** [CMakeFiles/pivot_to_twist.dir/build.make:63: CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/pivot_to_twist.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

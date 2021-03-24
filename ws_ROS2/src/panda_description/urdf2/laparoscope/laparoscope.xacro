@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find hera_description)/urdf/laparoscope/laparoscope.gazebo.xacro" />
+  <!-- Import Transmissions -->
+  <xacro:include filename="$(find hera_description)/urdf/laparoscope/laparoscope.transmission.xacro" />
+
+  <xacro:macro name="laparoscope" params="parent prefix hardware_interface laparoscope_name">
+
+    <!--joint between {parent} and camera head-->
+    <joint name="${parent}_${laparoscope_name}_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${prefix}_${laparoscope_name}_head"/>
+	      <!-- TODO: change these values!! -->
+      <origin xyz="0 0 0" rpy="${pi} ${-0.5*pi} 0"/>
+    </joint>
+
+    <!-- camera head link -->
+    <link name="${prefix}_${laparoscope_name}_head">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/laparoscope/visual/camera_head.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/laparoscope/collision/camera_head.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+	<!-- TODO: change these values!! -->
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="3.06"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!-- joint between camera head and optics -->
+    <joint name="${prefix}_${laparoscope_name}_joint" type="revolute">
+	<!-- TODO: change these values!! -->
+      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="${prefix}_${laparoscope_name}_head"/>
+      <child link="${prefix}_${laparoscope_name}_optics"/>
+      <axis xyz="0 0 1"/>
+	<!-- TODO: change these values!! -->
+      <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/>
+    </joint>
+
+    <!-- optics link -->
+    <link name="${prefix}_${laparoscope_name}_optics">
+      <visual>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/laparoscope/visual/optics.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+	  <mesh filename="package://hera_description/meshes/laparoscope/collision/optics.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+	<!-- TODO: change these values!! -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.34"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!--Extensions -->
+    <xacro:laparoscope_gazebo laparoscope_name="${laparoscope_name}" />
+    <xacro:laparoscope_transmission hardware_interface="${hardware_interface}" laparoscope_name="${laparoscope_name}"/>
+
+  </xacro:macro>
+
+</robot>

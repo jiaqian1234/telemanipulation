@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find panda_controller)/config/panda_controller.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" args="panda_joint_state_controller panda_joint_trajectory_controller" />
+  
+  <!-- load the trajectory_interface to convert trajectory topic in ros1 into the follow_trajectory action in ros2-->
+  <!--node name="trajectory_interface" pkg="panda_controller" type="follow_trajectory_interface" ns="/panda/trajectory_controller/"/-->
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+  </node>
+</launch>
+

@@ -1,0 +1,8 @@
+[0.069s] Invoking command in '/home/lijiaqian/prak_ws/build/pivot_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3
+[0.331s] [  3%] Built target pivot_msg__cpp
+[0.436s] [ 12%] Built target pivot_msg__rosidl_generator_c
+[0.450s] make[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[0.450s] make: *** wait: No child processes.  Stop.
+[0.450s] make: *** Waiting for unfinished jobs....
+[0.450s] make: *** wait: No child processes.  Stop.
+[0.480s] Invoked command in '/home/lijiaqian/prak_ws/build/pivot_msg' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3

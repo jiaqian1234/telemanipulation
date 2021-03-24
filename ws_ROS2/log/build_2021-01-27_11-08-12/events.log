@@ -1,0 +1,1029 @@
+[0.000000] (-) TimerEvent: {}
+[0.000983] (panda_description) JobQueued: {'identifier': 'panda_description', 'dependencies': OrderedDict()}
+[0.001069] (pivot_msg) JobQueued: {'identifier': 'pivot_msg', 'dependencies': OrderedDict()}
+[0.001115] (telemanipulator) JobQueued: {'identifier': 'telemanipulator', 'dependencies': OrderedDict([('pivot_msg', '/home/lijiaqian/prak_ws/install/pivot_msg')])}
+[0.002582] (pivot_msg) JobStarted: {'identifier': 'pivot_msg'}
+[0.033908] (panda_description) JobStarted: {'identifier': 'panda_description'}
+[0.040421] (pivot_msg) JobProgress: {'identifier': 'pivot_msg', 'progress': 'cmake'}
+[0.046719] (pivot_msg) JobProgress: {'identifier': 'pivot_msg', 'progress': 'build'}
+[0.046875] (pivot_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lijiaqian/prak_ws/build/pivot_msg', '--', '-j3', '-l3'], 'cwd': '/home/lijiaqian/prak_ws/build/pivot_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/pivot_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[0.055156] (panda_description) JobProgress: {'identifier': 'panda_description', 'progress': 'cmake'}
+[0.064275] (panda_description) JobProgress: {'identifier': 'panda_description', 'progress': 'build'}
+[0.064612] (panda_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lijiaqian/prak_ws/build/panda_description', '--', '-j3', '-l3'], 'cwd': '/home/lijiaqian/prak_ws/build/panda_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/panda_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[0.100109] (-) TimerEvent: {}
+[0.174568] (panda_description) CommandEnded: {'returncode': 0}
+[0.197327] (pivot_msg) StdoutLine: {'line': b'[  3%] Built target pivot_msg__cpp\n'}
+[0.200405] (-) TimerEvent: {}
+[0.245430] (panda_description) JobProgress: {'identifier': 'panda_description', 'progress': 'install'}
+[0.253605] (pivot_msg) StdoutLine: {'line': b'[ 12%] Built target pivot_msg__rosidl_generator_c\n'}
+[0.274401] (panda_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lijiaqian/prak_ws/build/panda_description'], 'cwd': '/home/lijiaqian/prak_ws/build/panda_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/panda_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[0.300760] (panda_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.301020] (-) TimerEvent: {}
+[0.301180] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/ament_index/resource_index/package_run_dependencies/panda_description\n'}
+[0.301535] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/ament_index/resource_index/parent_prefix_path/panda_description\n'}
+[0.301618] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/environment/ament_prefix_path.sh\n'}
+[0.301694] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/environment/ament_prefix_path.dsv\n'}
+[0.301757] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/environment/path.sh\n'}
+[0.301818] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/environment/path.dsv\n'}
+[0.301878] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/local_setup.bash\n'}
+[0.301937] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/local_setup.sh\n'}
+[0.301995] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/local_setup.zsh\n'}
+[0.302054] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/local_setup.dsv\n'}
+[0.302113] (panda_description) StdoutLine: {'line': b'-- Installing: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/package.dsv\n'}
+[0.303117] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/ament_index/resource_index/packages/panda_description\n'}
+[0.303653] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/cmake/panda_descriptionConfig.cmake\n'}
+[0.304350] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/cmake/panda_descriptionConfig-version.cmake\n'}
+[0.304598] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/package.xml\n'}
+[0.304678] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes\n'}
+[0.304866] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision\n'}
+[0.304950] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link6.stl\n'}
+[0.305737] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link4.stl\n'}
+[0.305929] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link0.stl\n'}
+[0.306003] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link5.stl\n'}
+[0.306311] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/hand.stl\n'}
+[0.306420] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link3.stl\n'}
+[0.306485] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link7.stl\n'}
+[0.306547] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/finger.stl\n'}
+[0.306608] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link1.stl\n'}
+[0.306668] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/collision/link2.stl\n'}
+[0.306737] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual\n'}
+[0.306988] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link7.dae\n'}
+[0.307067] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link0.dae\n'}
+[0.307130] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/hand.dae\n'}
+[0.307306] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link6.dae\n'}
+[0.309743] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/finger.dae\n'}
+[0.310359] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link4.dae\n'}
+[0.310549] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link2.dae\n'}
+[0.310622] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link1.dae\n'}
+[0.310701] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link5.dae\n'}
+[0.310765] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/meshes/visual/link3.dae\n'}
+[0.310826] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf\n'}
+[0.310888] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf/panda.urdf\n'}
+[0.310947] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf/panda_change_limits.urdf\n'}
+[0.311007] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf/hera.urdf\n'}
+[0.311081] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf/panda.srdf\n'}
+[0.311142] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2\n'}
+[0.311327] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/hera_main.urdf.xacro\n'}
+[0.311435] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools\n'}
+[0.311566] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/physical_milc\n'}
+[0.311682] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/physical_milc/physical_milc.xacro\n'}
+[0.311745] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/physical_milc/physical_milc.gazebo.xacro\n'}
+[0.311812] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/physical_milc/physical_milc.transmission.xacro\n'}
+[0.311873] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/milc\n'}
+[0.311945] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/milc/milc.gazebo.xacro\n'}
+[0.312007] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/milc/milc.transmission.xacro\n'}
+[0.312091] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/milc/milc.xacro\n'}
+[0.312169] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda_tools/panda_tool.xacro\n'}
+[0.312230] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/hera.gazebo.xacro\n'}
+[0.312332] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/hera_virtual.xacro\n'}
+[0.312608] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/laparoscope\n'}
+[0.312693] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/laparoscope/laparoscope.xacro\n'}
+[0.312756] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/laparoscope/laparoscope.gazebo.xacro\n'}
+[0.315759] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/laparoscope/laparoscope.transmission.xacro\n'}
+[0.315996] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/hera_operating_theatre.xacro\n'}
+[0.316145] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/open_help_phantom\n'}
+[0.316352] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/open_help_phantom/open_help_phantom.gazebo.xacro\n'}
+[0.316689] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/open_help_phantom/open_help_phantom.xacro\n'}
+[0.316804] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/pig_phantom\n'}
+[0.316876] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/pig_phantom/pig_phantom.xacro\n'}
+[0.316969] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/pig_phantom/pig_phantom.gazebo.xacro\n'}
+[0.317039] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/or_table\n'}
+[0.317125] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/or_table/or_table.xacro\n'}
+[0.317554] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/or_table/or_table.gazebo.xacro\n'}
+[0.317630] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda\n'}
+[0.317695] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda/panda.transmission.xacro\n'}
+[0.317758] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda/panda.xacro\n'}
+[0.317826] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda/panda.gazebo.xacro\n'}
+[0.317888] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/urdf2/panda/panda.srdf\n'}
+[0.317949] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/config\n'}
+[0.318010] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/config/panda_zeros.yaml\n'}
+[0.318071] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/config/panda_limits.yaml\n'}
+[0.318148] (panda_description) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/panda_description/share/panda_description/config/kinematics.yaml\n'}
+[0.318209] (panda_description) CommandEnded: {'returncode': 0}
+[0.334130] (pivot_msg) StdoutLine: {'line': b'[ 22%] Built target pivot_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.388264] (pivot_msg) StdoutLine: {'line': b'[ 32%] Built target pivot_msg__rosidl_typesupport_introspection_cpp\n'}
+[0.401183] (-) TimerEvent: {}
+[0.434743] (pivot_msg) StdoutLine: {'line': b'[ 41%] Built target pivot_msg__rosidl_typesupport_fastrtps_c\n'}
+[0.437200] (panda_description) JobEnded: {'identifier': 'panda_description', 'rc': 0}
+[0.485083] (pivot_msg) StdoutLine: {'line': b'[ 51%] Built target pivot_msg__rosidl_typesupport_introspection_c\n'}
+[0.501368] (-) TimerEvent: {}
+[0.528485] (pivot_msg) StdoutLine: {'line': b'[ 61%] Built target pivot_msg__rosidl_typesupport_c\n'}
+[0.571943] (pivot_msg) StdoutLine: {'line': b'[ 70%] Built target pivot_msg__rosidl_typesupport_cpp\n'}
+[0.603420] (-) TimerEvent: {}
+[0.609763] (pivot_msg) StdoutLine: {'line': b'[ 70%] Built target pivot_msg\n'}
+[0.647157] (pivot_msg) StdoutLine: {'line': b'[ 74%] Built target pivot_msg__py\n'}
+[0.703621] (-) TimerEvent: {}
+[0.712142] (pivot_msg) StdoutLine: {'line': b'[ 80%] Built target pivot_msg__python\n'}
+[0.765387] (pivot_msg) StdoutLine: {'line': b'[ 87%] Built target pivot_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.803818] (-) TimerEvent: {}
+[0.812412] (pivot_msg) StdoutLine: {'line': b'[ 93%] Built target pivot_msg__rosidl_typesupport_c__pyext\n'}
+[0.860210] (pivot_msg) StdoutLine: {'line': b'[100%] Built target pivot_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.881436] (pivot_msg) CommandEnded: {'returncode': 0}
+[0.903950] (-) TimerEvent: {}
+[1.004441] (-) TimerEvent: {}
+[1.010973] (pivot_msg) JobProgress: {'identifier': 'pivot_msg', 'progress': 'install'}
+[1.011185] (pivot_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lijiaqian/prak_ws/build/pivot_msg'], 'cwd': '/home/lijiaqian/prak_ws/build/pivot_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/pivot_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[1.026487] (pivot_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.026672] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/rosidl_interfaces/pivot_msg\n'}
+[1.026818] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.026978] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.027077] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/pivot.h\n'}
+[1.027268] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.027346] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.h\n'}
+[1.027405] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__functions.c\n'}
+[1.027460] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__functions.h\n'}
+[1.027515] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__struct.h\n'}
+[1.027569] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.027623] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/library_path.sh\n'}
+[1.027676] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/library_path.dsv\n'}
+[1.027742] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_generator_c.so\n'}
+[1.027839] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.027904] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.027960] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.028014] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_fastrtps_c.h\n'}
+[1.028248] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.028338] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[1.028396] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.028449] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.028502] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.028554] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/dds_fastrtps\n'}
+[1.028695] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.028754] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.028837] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.029015] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.029079] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.029134] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.029188] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.029272] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_introspection_c.h\n'}
+[1.029334] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.c\n'}
+[1.029388] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_introspection_c.so\n'}
+[1.029766] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_c.so\n'}
+[1.030010] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.030106] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.030221] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/pivot.hpp\n'}
+[1.030296] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.030353] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__traits.hpp\n'}
+[1.030408] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__struct.hpp\n'}
+[1.030471] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__builder.hpp\n'}
+[1.030526] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg\n'}
+[1.030597] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg\n'}
+[1.030651] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail\n'}
+[1.030704] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__type_support.cpp\n'}
+[1.030758] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/include/pivot_msg/msg/detail/pivot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.030862] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[1.031979] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__rosidl_typesupport_cpp.so\n'}
+[1.032191] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/pythonpath.sh\n'}
+[1.032286] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/pythonpath.dsv\n'}
+[1.032380] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/__init__.py\n'}
+[1.077985] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg\n'}
+[1.078313] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/_pivot_s.c\n'}
+[1.078581] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/__init__.py\n'}
+[1.078660] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/msg/_pivot.py\n'}
+[1.078725] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.079188] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.080065] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages/pivot_msg/pivot_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.080487] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/lib/libpivot_msg__python.so\n'}
+[1.084131] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/msg/Pivot.idl\n'}
+[1.084441] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/msg/Pivot.msg\n'}
+[1.084575] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/package_run_dependencies/pivot_msg\n'}
+[1.084686] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/parent_prefix_path/pivot_msg\n'}
+[1.084816] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/ament_prefix_path.sh\n'}
+[1.084890] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/ament_prefix_path.dsv\n'}
+[1.084988] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/path.sh\n'}
+[1.085053] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/environment/path.dsv\n'}
+[1.085111] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.bash\n'}
+[1.085331] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.sh\n'}
+[1.085401] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.zsh\n'}
+[1.085460] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/local_setup.dsv\n'}
+[1.085549] (pivot_msg) StdoutLine: {'line': b'-- Installing: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/package.dsv\n'}
+[1.086043] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/ament_index/resource_index/packages/pivot_msg\n'}
+[1.087587] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cExport.cmake\n'}
+[1.087917] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.089491] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.089702] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.090119] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cExport.cmake\n'}
+[1.090237] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.091212] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_generator_cppExport.cmake\n'}
+[1.092489] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.093010] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.093674] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cppExport.cmake\n'}
+[1.093823] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.093966] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[1.094176] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.094259] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.094319] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.094376] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.094710] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.094853] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.094936] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msgConfig.cmake\n'}
+[1.094998] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake/pivot_msgConfig-version.cmake\n'}
+[1.095133] (pivot_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/package.xml\n'}
+[1.100000] (pivot_msg) CommandEnded: {'returncode': 0}
+[1.104768] (-) TimerEvent: {}
+[1.205590] (-) TimerEvent: {}
+[1.248207] (pivot_msg) JobEnded: {'identifier': 'pivot_msg', 'rc': 0}
+[1.252461] (telemanipulator) JobStarted: {'identifier': 'telemanipulator'}
+[1.280315] (telemanipulator) JobProgress: {'identifier': 'telemanipulator', 'progress': 'cmake'}
+[1.281400] (telemanipulator) JobProgress: {'identifier': 'telemanipulator', 'progress': 'build'}
+[1.284664] (telemanipulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lijiaqian/prak_ws/build/telemanipulator', '--', '-j3', '-l3'], 'cwd': '/home/lijiaqian/prak_ws/build/telemanipulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/telemanipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[1.305720] (-) TimerEvent: {}
+[1.401282] (telemanipulator) StdoutLine: {'line': b'[ 33%] Built target pivot_transform\n'}
+[1.405881] (-) TimerEvent: {}
+[1.457372] (telemanipulator) StdoutLine: {'line': b'[ 55%] Built target key_to_servo\n'}
+[1.487430] (telemanipulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pivot_to_twist\x1b[0m\n'}
+[1.506023] (-) TimerEvent: {}
+[1.583024] (telemanipulator) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o\x1b[0m\n'}
+[1.606153] (-) TimerEvent: {}
+[1.706455] (-) TimerEvent: {}
+[1.806761] (-) TimerEvent: {}
+[1.907142] (-) TimerEvent: {}
+[2.007582] (-) TimerEvent: {}
+[2.107994] (-) TimerEvent: {}
+[2.208460] (-) TimerEvent: {}
+[2.309008] (-) TimerEvent: {}
+[2.409390] (-) TimerEvent: {}
+[2.509801] (-) TimerEvent: {}
+[2.610193] (-) TimerEvent: {}
+[2.710559] (-) TimerEvent: {}
+[2.811187] (-) TimerEvent: {}
+[2.911847] (-) TimerEvent: {}
+[3.012297] (-) TimerEvent: {}
+[3.112670] (-) TimerEvent: {}
+[3.213266] (-) TimerEvent: {}
+[3.313650] (-) TimerEvent: {}
+[3.414122] (-) TimerEvent: {}
+[3.514485] (-) TimerEvent: {}
+[3.614904] (-) TimerEvent: {}
+[3.715200] (-) TimerEvent: {}
+[3.815564] (-) TimerEvent: {}
+[3.915984] (-) TimerEvent: {}
+[4.016582] (-) TimerEvent: {}
+[4.117005] (-) TimerEvent: {}
+[4.219957] (-) TimerEvent: {}
+[4.320384] (-) TimerEvent: {}
+[4.420723] (-) TimerEvent: {}
+[4.521032] (-) TimerEvent: {}
+[4.621489] (-) TimerEvent: {}
+[4.721916] (-) TimerEvent: {}
+[4.822397] (-) TimerEvent: {}
+[4.924138] (-) TimerEvent: {}
+[5.024555] (-) TimerEvent: {}
+[5.125058] (-) TimerEvent: {}
+[5.225410] (-) TimerEvent: {}
+[5.325755] (-) TimerEvent: {}
+[5.426169] (-) TimerEvent: {}
+[5.526604] (-) TimerEvent: {}
+[5.627921] (-) TimerEvent: {}
+[5.728399] (-) TimerEvent: {}
+[5.828842] (-) TimerEvent: {}
+[5.932129] (-) TimerEvent: {}
+[6.032580] (-) TimerEvent: {}
+[6.133001] (-) TimerEvent: {}
+[6.233361] (-) TimerEvent: {}
+[6.333680] (-) TimerEvent: {}
+[6.434070] (-) TimerEvent: {}
+[6.534556] (-) TimerEvent: {}
+[6.634990] (-) TimerEvent: {}
+[6.735414] (-) TimerEvent: {}
+[6.835732] (-) TimerEvent: {}
+[6.936131] (-) TimerEvent: {}
+[7.036610] (-) TimerEvent: {}
+[7.137012] (-) TimerEvent: {}
+[7.237463] (-) TimerEvent: {}
+[7.339992] (-) TimerEvent: {}
+[7.440498] (-) TimerEvent: {}
+[7.540887] (-) TimerEvent: {}
+[7.641329] (-) TimerEvent: {}
+[7.741771] (-) TimerEvent: {}
+[7.842248] (-) TimerEvent: {}
+[7.942804] (-) TimerEvent: {}
+[8.044197] (-) TimerEvent: {}
+[8.144648] (-) TimerEvent: {}
+[8.245093] (-) TimerEvent: {}
+[8.345483] (-) TimerEvent: {}
+[8.445888] (-) TimerEvent: {}
+[8.550666] (-) TimerEvent: {}
+[8.650997] (-) TimerEvent: {}
+[8.751490] (-) TimerEvent: {}
+[8.851966] (-) TimerEvent: {}
+[8.952385] (-) TimerEvent: {}
+[9.052743] (-) TimerEvent: {}
+[9.153168] (-) TimerEvent: {}
+[9.253825] (-) TimerEvent: {}
+[9.354300] (-) TimerEvent: {}
+[9.454713] (-) TimerEvent: {}
+[9.555276] (-) TimerEvent: {}
+[9.655609] (-) TimerEvent: {}
+[9.755997] (-) TimerEvent: {}
+[9.856454] (-) TimerEvent: {}
+[9.956970] (-) TimerEvent: {}
+[10.060290] (-) TimerEvent: {}
+[10.160747] (-) TimerEvent: {}
+[10.261155] (-) TimerEvent: {}
+[10.361590] (-) TimerEvent: {}
+[10.461944] (-) TimerEvent: {}
+[10.562358] (-) TimerEvent: {}
+[10.662754] (-) TimerEvent: {}
+[10.763185] (-) TimerEvent: {}
+[10.863654] (-) TimerEvent: {}
+[10.964022] (-) TimerEvent: {}
+[11.064388] (-) TimerEvent: {}
+[11.164727] (-) TimerEvent: {}
+[11.265140] (-) TimerEvent: {}
+[11.365544] (-) TimerEvent: {}
+[11.465957] (-) TimerEvent: {}
+[11.566397] (-) TimerEvent: {}
+[11.666774] (-) TimerEvent: {}
+[11.767141] (-) TimerEvent: {}
+[11.867560] (-) TimerEvent: {}
+[11.967938] (-) TimerEvent: {}
+[12.068346] (-) TimerEvent: {}
+[12.168729] (-) TimerEvent: {}
+[12.269097] (-) TimerEvent: {}
+[12.369463] (-) TimerEvent: {}
+[12.469948] (-) TimerEvent: {}
+[12.570408] (-) TimerEvent: {}
+[12.670762] (-) TimerEvent: {}
+[12.771268] (-) TimerEvent: {}
+[12.871661] (-) TimerEvent: {}
+[12.972095] (-) TimerEvent: {}
+[13.072490] (-) TimerEvent: {}
+[13.172942] (-) TimerEvent: {}
+[13.273349] (-) TimerEvent: {}
+[13.373742] (-) TimerEvent: {}
+[13.474061] (-) TimerEvent: {}
+[13.574393] (-) TimerEvent: {}
+[13.674846] (-) TimerEvent: {}
+[13.775404] (-) TimerEvent: {}
+[13.875771] (-) TimerEvent: {}
+[13.976192] (-) TimerEvent: {}
+[14.076521] (-) TimerEvent: {}
+[14.176855] (-) TimerEvent: {}
+[14.277220] (-) TimerEvent: {}
+[14.377720] (-) TimerEvent: {}
+[14.480255] (-) TimerEvent: {}
+[14.580694] (-) TimerEvent: {}
+[14.681104] (-) TimerEvent: {}
+[14.781574] (-) TimerEvent: {}
+[14.881951] (-) TimerEvent: {}
+[14.982393] (-) TimerEvent: {}
+[15.082814] (-) TimerEvent: {}
+[15.183245] (-) TimerEvent: {}
+[15.283626] (-) TimerEvent: {}
+[15.384091] (-) TimerEvent: {}
+[15.484639] (-) TimerEvent: {}
+[15.585310] (-) TimerEvent: {}
+[15.685677] (-) TimerEvent: {}
+[15.786047] (-) TimerEvent: {}
+[15.887465] (-) TimerEvent: {}
+[15.987978] (-) TimerEvent: {}
+[16.088382] (-) TimerEvent: {}
+[16.188903] (-) TimerEvent: {}
+[16.289387] (-) TimerEvent: {}
+[16.389867] (-) TimerEvent: {}
+[16.490375] (-) TimerEvent: {}
+[16.595625] (-) TimerEvent: {}
+[16.697449] (-) TimerEvent: {}
+[16.850060] (-) TimerEvent: {}
+[16.956048] (-) TimerEvent: {}
+[17.064633] (-) TimerEvent: {}
+[17.168066] (-) TimerEvent: {}
+[17.365655] (-) TimerEvent: {}
+[17.471267] (-) TimerEvent: {}
+[17.600284] (-) TimerEvent: {}
+[17.787691] (-) TimerEvent: {}
+[17.914312] (-) TimerEvent: {}
+[18.093649] (-) TimerEvent: {}
+[18.260984] (-) TimerEvent: {}
+[18.412342] (-) TimerEvent: {}
+[18.628222] (-) TimerEvent: {}
+[18.827819] (-) TimerEvent: {}
+[19.037616] (-) TimerEvent: {}
+[19.214589] (-) TimerEvent: {}
+[19.349029] (-) TimerEvent: {}
+[19.487285] (-) TimerEvent: {}
+[19.624383] (-) TimerEvent: {}
+[19.796355] (-) TimerEvent: {}
+[19.920524] (-) TimerEvent: {}
+[20.109198] (-) TimerEvent: {}
+[20.261381] (-) TimerEvent: {}
+[20.381964] (-) TimerEvent: {}
+[20.497435] (-) TimerEvent: {}
+[20.646279] (-) TimerEvent: {}
+[20.749225] (-) TimerEvent: {}
+[20.868483] (-) TimerEvent: {}
+[21.008460] (-) TimerEvent: {}
+[21.138716] (-) TimerEvent: {}
+[21.258436] (-) TimerEvent: {}
+[21.388208] (-) TimerEvent: {}
+[21.520706] (-) TimerEvent: {}
+[21.686877] (-) TimerEvent: {}
+[21.819731] (-) TimerEvent: {}
+[21.940306] (-) TimerEvent: {}
+[22.070280] (-) TimerEvent: {}
+[22.199125] (-) TimerEvent: {}
+[22.338239] (-) TimerEvent: {}
+[22.496529] (-) TimerEvent: {}
+[22.643830] (-) TimerEvent: {}
+[22.768593] (-) TimerEvent: {}
+[22.920071] (-) TimerEvent: {}
+[23.092406] (-) TimerEvent: {}
+[23.224763] (-) TimerEvent: {}
+[23.376158] (-) TimerEvent: {}
+[23.515788] (-) TimerEvent: {}
+[23.703386] (-) TimerEvent: {}
+[23.824290] (-) TimerEvent: {}
+[23.995401] (-) TimerEvent: {}
+[24.188447] (-) TimerEvent: {}
+[24.316444] (-) TimerEvent: {}
+[24.445432] (-) TimerEvent: {}
+[24.602981] (-) TimerEvent: {}
+[24.720838] (-) TimerEvent: {}
+[24.843307] (-) TimerEvent: {}
+[24.964723] (-) TimerEvent: {}
+[25.104901] (-) TimerEvent: {}
+[25.229279] (-) TimerEvent: {}
+[25.340286] (-) TimerEvent: {}
+[25.489895] (-) TimerEvent: {}
+[25.645588] (-) TimerEvent: {}
+[25.769586] (-) TimerEvent: {}
+[25.904177] (-) TimerEvent: {}
+[26.059516] (-) TimerEvent: {}
+[26.220214] (-) TimerEvent: {}
+[26.336187] (-) TimerEvent: {}
+[26.464344] (-) TimerEvent: {}
+[26.601913] (-) TimerEvent: {}
+[26.744269] (-) TimerEvent: {}
+[26.879865] (-) TimerEvent: {}
+[27.026109] (-) TimerEvent: {}
+[27.142887] (-) TimerEvent: {}
+[27.263916] (-) TimerEvent: {}
+[27.388396] (-) TimerEvent: {}
+[27.516165] (-) TimerEvent: {}
+[27.651595] (-) TimerEvent: {}
+[27.772664] (-) TimerEvent: {}
+[27.910292] (-) TimerEvent: {}
+[28.057613] (-) TimerEvent: {}
+[28.230287] (-) TimerEvent: {}
+[28.384478] (-) TimerEvent: {}
+[28.530876] (-) TimerEvent: {}
+[28.665020] (-) TimerEvent: {}
+[28.845590] (-) TimerEvent: {}
+[28.999842] (-) TimerEvent: {}
+[29.123250] (-) TimerEvent: {}
+[29.268170] (-) TimerEvent: {}
+[29.400856] (-) TimerEvent: {}
+[29.535955] (-) TimerEvent: {}
+[29.680680] (-) TimerEvent: {}
+[29.810815] (-) TimerEvent: {}
+[29.979362] (-) TimerEvent: {}
+[30.132347] (-) TimerEvent: {}
+[30.286927] (-) TimerEvent: {}
+[30.435015] (-) TimerEvent: {}
+[30.564227] (-) TimerEvent: {}
+[30.688232] (-) TimerEvent: {}
+[30.828519] (-) TimerEvent: {}
+[30.992273] (-) TimerEvent: {}
+[31.126324] (-) TimerEvent: {}
+[31.248161] (-) TimerEvent: {}
+[31.398741] (-) TimerEvent: {}
+[31.528243] (-) TimerEvent: {}
+[31.692201] (-) TimerEvent: {}
+[31.843873] (-) TimerEvent: {}
+[31.984080] (-) TimerEvent: {}
+[32.124281] (-) TimerEvent: {}
+[32.257841] (-) TimerEvent: {}
+[32.399829] (-) TimerEvent: {}
+[32.544783] (-) TimerEvent: {}
+[32.666857] (-) TimerEvent: {}
+[32.807067] (-) TimerEvent: {}
+[32.940619] (-) TimerEvent: {}
+[33.088606] (-) TimerEvent: {}
+[33.241332] (-) TimerEvent: {}
+[33.380232] (-) TimerEvent: {}
+[33.511500] (-) TimerEvent: {}
+[33.646508] (-) TimerEvent: {}
+[33.780823] (-) TimerEvent: {}
+[33.913943] (-) TimerEvent: {}
+[34.060299] (-) TimerEvent: {}
+[34.194703] (-) TimerEvent: {}
+[34.299363] (-) TimerEvent: {}
+[34.435250] (-) TimerEvent: {}
+[34.627520] (-) TimerEvent: {}
+[34.763585] (-) TimerEvent: {}
+[34.894907] (-) TimerEvent: {}
+[35.074328] (-) TimerEvent: {}
+[35.249742] (-) TimerEvent: {}
+[35.363448] (-) TimerEvent: {}
+[35.488749] (-) TimerEvent: {}
+[35.615237] (-) TimerEvent: {}
+[35.741371] (-) TimerEvent: {}
+[35.880501] (-) TimerEvent: {}
+[36.023149] (-) TimerEvent: {}
+[36.152716] (-) TimerEvent: {}
+[36.280132] (-) TimerEvent: {}
+[36.400994] (-) TimerEvent: {}
+[36.541013] (-) TimerEvent: {}
+[36.681000] (-) TimerEvent: {}
+[36.814628] (-) TimerEvent: {}
+[36.948484] (-) TimerEvent: {}
+[37.079500] (-) TimerEvent: {}
+[37.212285] (-) TimerEvent: {}
+[37.342039] (-) TimerEvent: {}
+[37.488484] (-) TimerEvent: {}
+[37.705066] (-) TimerEvent: {}
+[37.811886] (-) TimerEvent: {}
+[37.941324] (-) TimerEvent: {}
+[38.072452] (-) TimerEvent: {}
+[38.195407] (-) TimerEvent: {}
+[38.330715] (-) TimerEvent: {}
+[38.462494] (-) TimerEvent: {}
+[38.630197] (-) TimerEvent: {}
+[38.760613] (-) TimerEvent: {}
+[38.908719] (-) TimerEvent: {}
+[39.036930] (-) TimerEvent: {}
+[39.153712] (-) TimerEvent: {}
+[39.305048] (-) TimerEvent: {}
+[39.433973] (-) TimerEvent: {}
+[39.600626] (-) TimerEvent: {}
+[39.716217] (-) TimerEvent: {}
+[39.831566] (-) TimerEvent: {}
+[39.947177] (-) TimerEvent: {}
+[40.072461] (-) TimerEvent: {}
+[40.275506] (-) TimerEvent: {}
+[40.392798] (-) TimerEvent: {}
+[40.557073] (-) TimerEvent: {}
+[40.706758] (-) TimerEvent: {}
+[40.815332] (-) TimerEvent: {}
+[41.022983] (-) TimerEvent: {}
+[41.238022] (-) TimerEvent: {}
+[41.383944] (-) TimerEvent: {}
+[41.509783] (-) TimerEvent: {}
+[41.714936] (-) TimerEvent: {}
+[41.838507] (-) TimerEvent: {}
+[41.964727] (-) TimerEvent: {}
+[42.106523] (-) TimerEvent: {}
+[42.227749] (-) TimerEvent: {}
+[42.385460] (-) TimerEvent: {}
+[42.516922] (-) TimerEvent: {}
+[42.647696] (-) TimerEvent: {}
+[42.770054] (-) TimerEvent: {}
+[42.908880] (-) TimerEvent: {}
+[43.042484] (-) TimerEvent: {}
+[43.167556] (-) TimerEvent: {}
+[43.298540] (-) TimerEvent: {}
+[43.445238] (-) TimerEvent: {}
+[43.661725] (-) TimerEvent: {}
+[43.784345] (-) TimerEvent: {}
+[43.906637] (-) TimerEvent: {}
+[44.044337] (-) TimerEvent: {}
+[44.165798] (-) TimerEvent: {}
+[44.341609] (-) TimerEvent: {}
+[44.496889] (-) TimerEvent: {}
+[44.644421] (-) TimerEvent: {}
+[44.797013] (-) TimerEvent: {}
+[44.910061] (-) TimerEvent: {}
+[45.025265] (-) TimerEvent: {}
+[45.130376] (-) TimerEvent: {}
+[45.356067] (-) TimerEvent: {}
+[45.586067] (-) TimerEvent: {}
+[45.745764] (-) TimerEvent: {}
+[45.876876] (-) TimerEvent: {}
+[46.028593] (-) TimerEvent: {}
+[46.160325] (-) TimerEvent: {}
+[46.289614] (-) TimerEvent: {}
+[46.406512] (-) TimerEvent: {}
+[46.617073] (-) TimerEvent: {}
+[46.786310] (-) TimerEvent: {}
+[47.018064] (-) TimerEvent: {}
+[47.159134] (-) TimerEvent: {}
+[47.320800] (-) TimerEvent: {}
+[47.534726] (-) TimerEvent: {}
+[47.638712] (-) TimerEvent: {}
+[47.766888] (-) TimerEvent: {}
+[47.963184] (-) TimerEvent: {}
+[48.226184] (-) TimerEvent: {}
+[48.734199] (-) TimerEvent: {}
+[49.029223] (-) TimerEvent: {}
+[49.180175] (-) TimerEvent: {}
+[49.421602] (-) TimerEvent: {}
+[49.590414] (-) TimerEvent: {}
+[49.779869] (-) TimerEvent: {}
+[49.922742] (-) TimerEvent: {}
+[50.067433] (-) TimerEvent: {}
+[50.357212] (-) TimerEvent: {}
+[50.491799] (-) TimerEvent: {}
+[50.607708] (-) TimerEvent: {}
+[50.788482] (-) TimerEvent: {}
+[50.946942] (-) TimerEvent: {}
+[51.075486] (-) TimerEvent: {}
+[51.205987] (-) TimerEvent: {}
+[51.378785] (-) TimerEvent: {}
+[51.532885] (-) TimerEvent: {}
+[51.656374] (-) TimerEvent: {}
+[51.785822] (-) TimerEvent: {}
+[51.961751] (-) TimerEvent: {}
+[52.103195] (-) TimerEvent: {}
+[52.248626] (-) TimerEvent: {}
+[52.384197] (-) TimerEvent: {}
+[52.515463] (-) TimerEvent: {}
+[52.646775] (-) TimerEvent: {}
+[52.788577] (-) TimerEvent: {}
+[52.893636] (-) TimerEvent: {}
+[52.996122] (-) TimerEvent: {}
+[53.122621] (-) TimerEvent: {}
+[53.330891] (-) TimerEvent: {}
+[53.508103] (-) TimerEvent: {}
+[53.737353] (-) TimerEvent: {}
+[53.854170] (-) TimerEvent: {}
+[54.025916] (-) TimerEvent: {}
+[54.192832] (-) TimerEvent: {}
+[54.422468] (-) TimerEvent: {}
+[54.573248] (-) TimerEvent: {}
+[54.749663] (-) TimerEvent: {}
+[55.007293] (-) TimerEvent: {}
+[55.232143] (-) TimerEvent: {}
+[55.373966] (-) TimerEvent: {}
+[55.536090] (-) TimerEvent: {}
+[55.662713] (-) TimerEvent: {}
+[55.821106] (-) TimerEvent: {}
+[55.976489] (-) TimerEvent: {}
+[56.191684] (-) TimerEvent: {}
+[56.371279] (-) TimerEvent: {}
+[56.548925] (-) TimerEvent: {}
+[56.739596] (-) TimerEvent: {}
+[56.906284] (-) TimerEvent: {}
+[57.106691] (-) TimerEvent: {}
+[57.258967] (-) TimerEvent: {}
+[57.397786] (-) TimerEvent: {}
+[57.511870] (-) TimerEvent: {}
+[57.781759] (-) TimerEvent: {}
+[57.956873] (-) TimerEvent: {}
+[58.100308] (-) TimerEvent: {}
+[58.304568] (-) TimerEvent: {}
+[58.436698] (-) TimerEvent: {}
+[58.710356] (-) TimerEvent: {}
+[58.843399] (-) TimerEvent: {}
+[58.964932] (-) TimerEvent: {}
+[59.106953] (-) TimerEvent: {}
+[59.218356] (-) TimerEvent: {}
+[59.391106] (-) TimerEvent: {}
+[59.502959] (-) TimerEvent: {}
+[59.668842] (-) TimerEvent: {}
+[59.785846] (-) TimerEvent: {}
+[60.050222] (-) TimerEvent: {}
+[60.325997] (-) TimerEvent: {}
+[60.479435] (-) TimerEvent: {}
+[60.681162] (-) TimerEvent: {}
+[60.961736] (-) TimerEvent: {}
+[61.231341] (-) TimerEvent: {}
+[61.357252] (-) TimerEvent: {}
+[61.458335] (-) TimerEvent: {}
+[61.560966] (-) TimerEvent: {}
+[61.702351] (-) TimerEvent: {}
+[62.123508] (-) TimerEvent: {}
+[62.236338] (-) TimerEvent: {}
+[62.338358] (-) TimerEvent: {}
+[62.440180] (-) TimerEvent: {}
+[62.542013] (-) TimerEvent: {}
+[62.644556] (-) TimerEvent: {}
+[62.753715] (-) TimerEvent: {}
+[62.908334] (-) TimerEvent: {}
+[63.303494] (-) TimerEvent: {}
+[63.410939] (-) TimerEvent: {}
+[63.517115] (-) TimerEvent: {}
+[63.685940] (-) TimerEvent: {}
+[63.907282] (-) TimerEvent: {}
+[64.120400] (-) TimerEvent: {}
+[64.354918] (-) TimerEvent: {}
+[64.499880] (-) TimerEvent: {}
+[64.648141] (-) TimerEvent: {}
+[64.836145] (-) TimerEvent: {}
+[65.028089] (-) TimerEvent: {}
+[65.197352] (-) TimerEvent: {}
+[65.324079] (-) TimerEvent: {}
+[65.458828] (-) TimerEvent: {}
+[65.664142] (-) TimerEvent: {}
+[65.790656] (-) TimerEvent: {}
+[65.893559] (-) TimerEvent: {}
+[65.994589] (-) TimerEvent: {}
+[66.219382] (-) TimerEvent: {}
+[66.403581] (-) TimerEvent: {}
+[66.603085] (-) TimerEvent: {}
+[66.790523] (-) TimerEvent: {}
+[66.907086] (-) TimerEvent: {}
+[67.042481] (-) TimerEvent: {}
+[67.237177] (-) TimerEvent: {}
+[67.382021] (-) TimerEvent: {}
+[67.516426] (-) TimerEvent: {}
+[67.676846] (-) TimerEvent: {}
+[67.843308] (-) TimerEvent: {}
+[67.959265] (-) TimerEvent: {}
+[68.107639] (-) TimerEvent: {}
+[68.241265] (-) TimerEvent: {}
+[68.370808] (-) TimerEvent: {}
+[68.590207] (-) TimerEvent: {}
+[68.775751] (-) TimerEvent: {}
+[68.880395] (-) TimerEvent: {}
+[68.983355] (-) TimerEvent: {}
+[69.124733] (-) TimerEvent: {}
+[69.305596] (-) TimerEvent: {}
+[69.453808] (-) TimerEvent: {}
+[69.637558] (-) TimerEvent: {}
+[69.792114] (-) TimerEvent: {}
+[69.999999] (-) TimerEvent: {}
+[70.187420] (-) TimerEvent: {}
+[70.298325] (-) TimerEvent: {}
+[70.399850] (-) TimerEvent: {}
+[70.590690] (-) TimerEvent: {}
+[70.829056] (-) TimerEvent: {}
+[71.072469] (-) TimerEvent: {}
+[71.316435] (-) TimerEvent: {}
+[71.457283] (-) TimerEvent: {}
+[71.573217] (-) TimerEvent: {}
+[71.782652] (-) TimerEvent: {}
+[71.944165] (-) TimerEvent: {}
+[72.339444] (-) TimerEvent: {}
+[72.532770] (-) TimerEvent: {}
+[72.725746] (-) TimerEvent: {}
+[72.846981] (-) TimerEvent: {}
+[73.136830] (-) TimerEvent: {}
+[73.511859] (-) TimerEvent: {}
+[73.618657] (-) TimerEvent: {}
+[73.728852] (-) TimerEvent: {}
+[73.839533] (-) TimerEvent: {}
+[73.970415] (-) TimerEvent: {}
+[74.189430] (-) TimerEvent: {}
+[74.305355] (-) TimerEvent: {}
+[74.414234] (-) TimerEvent: {}
+[74.533395] (-) TimerEvent: {}
+[74.789488] (-) TimerEvent: {}
+[74.947411] (-) TimerEvent: {}
+[75.108310] (-) TimerEvent: {}
+[75.360601] (-) TimerEvent: {}
+[75.612820] (-) TimerEvent: {}
+[75.753101] (-) TimerEvent: {}
+[75.858531] (-) TimerEvent: {}
+[75.960995] (-) TimerEvent: {}
+[76.274259] (-) TimerEvent: {}
+[76.382225] (-) TimerEvent: {}
+[76.482692] (-) TimerEvent: {}
+[76.585150] (-) TimerEvent: {}
+[76.693639] (-) TimerEvent: {}
+[76.795706] (-) TimerEvent: {}
+[76.897580] (-) TimerEvent: {}
+[77.224090] (-) TimerEvent: {}
+[77.612877] (-) TimerEvent: {}
+[77.959784] (-) TimerEvent: {}
+[78.075260] (-) TimerEvent: {}
+[78.179717] (-) TimerEvent: {}
+[78.283999] (-) TimerEvent: {}
+[78.671655] (-) TimerEvent: {}
+[78.896703] (-) TimerEvent: {}
+[78.998001] (-) TimerEvent: {}
+[79.098431] (-) TimerEvent: {}
+[79.200194] (-) TimerEvent: {}
+[79.341222] (-) TimerEvent: {}
+[79.591104] (-) TimerEvent: {}
+[80.036331] (-) TimerEvent: {}
+[80.247573] (-) TimerEvent: {}
+[80.371414] (-) TimerEvent: {}
+[80.471828] (-) TimerEvent: {}
+[80.637369] (-) TimerEvent: {}
+[80.823162] (-) TimerEvent: {}
+[81.002772] (-) TimerEvent: {}
+[81.104144] (-) TimerEvent: {}
+[81.225296] (-) TimerEvent: {}
+[81.332529] (-) TimerEvent: {}
+[81.768318] (-) TimerEvent: {}
+[82.068077] (-) TimerEvent: {}
+[82.323780] (-) TimerEvent: {}
+[82.529286] (-) TimerEvent: {}
+[82.687911] (-) TimerEvent: {}
+[82.830920] (-) TimerEvent: {}
+[82.974757] (-) TimerEvent: {}
+[83.233054] (-) TimerEvent: {}
+[83.434050] (-) TimerEvent: {}
+[83.554826] (-) TimerEvent: {}
+[83.685530] (-) TimerEvent: {}
+[83.901167] (-) TimerEvent: {}
+[84.004776] (-) TimerEvent: {}
+[84.232378] (-) TimerEvent: {}
+[84.397746] (-) TimerEvent: {}
+[84.509165] (-) TimerEvent: {}
+[84.612459] (-) TimerEvent: {}
+[84.770097] (-) TimerEvent: {}
+[84.907598] (-) TimerEvent: {}
+[85.012486] (-) TimerEvent: {}
+[85.124600] (-) TimerEvent: {}
+[85.295220] (-) TimerEvent: {}
+[85.502260] (-) TimerEvent: {}
+[85.749729] (-) TimerEvent: {}
+[85.998899] (-) TimerEvent: {}
+[86.158233] (-) TimerEvent: {}
+[86.367728] (-) TimerEvent: {}
+[86.593620] (-) TimerEvent: {}
+[86.764524] (-) TimerEvent: {}
+[86.992846] (-) TimerEvent: {}
+[87.191109] (-) TimerEvent: {}
+[87.349593] (-) TimerEvent: {}
+[87.540311] (-) TimerEvent: {}
+[87.828595] (-) TimerEvent: {}
+[88.133876] (-) TimerEvent: {}
+[88.299009] (-) TimerEvent: {}
+[88.587012] (-) TimerEvent: {}
+[88.764363] (-) TimerEvent: {}
+[88.936491] (-) TimerEvent: {}
+[89.356462] (-) TimerEvent: {}
+[89.547119] (-) TimerEvent: {}
+[89.709890] (-) TimerEvent: {}
+[89.880491] (-) TimerEvent: {}
+[90.018030] (-) TimerEvent: {}
+[90.238504] (-) TimerEvent: {}
+[90.353190] (-) TimerEvent: {}
+[90.469729] (-) TimerEvent: {}
+[90.588279] (-) TimerEvent: {}
+[90.693076] (-) TimerEvent: {}
+[90.814466] (-) TimerEvent: {}
+[91.005542] (-) TimerEvent: {}
+[91.168958] (-) TimerEvent: {}
+[91.352348] (-) TimerEvent: {}
+[91.557005] (-) TimerEvent: {}
+[91.786552] (-) TimerEvent: {}
+[91.978161] (-) TimerEvent: {}
+[92.169870] (-) TimerEvent: {}
+[92.336770] (-) TimerEvent: {}
+[92.542525] (-) TimerEvent: {}
+[92.662656] (-) TimerEvent: {}
+[92.860231] (-) TimerEvent: {}
+[93.055637] (-) TimerEvent: {}
+[93.247786] (-) TimerEvent: {}
+[93.465965] (-) TimerEvent: {}
+[93.696317] (-) TimerEvent: {}
+[93.851228] (-) TimerEvent: {}
+[94.021840] (-) TimerEvent: {}
+[94.184900] (-) TimerEvent: {}
+[94.321483] (-) TimerEvent: {}
+[94.457409] (-) TimerEvent: {}
+[94.694820] (-) TimerEvent: {}
+[95.080551] (-) TimerEvent: {}
+[95.251553] (-) TimerEvent: {}
+[95.381589] (-) TimerEvent: {}
+[95.790345] (-) TimerEvent: {}
+[96.100496] (-) TimerEvent: {}
+[96.247116] (-) TimerEvent: {}
+[96.409742] (-) TimerEvent: {}
+[96.700757] (-) TimerEvent: {}
+[97.073556] (-) TimerEvent: {}
+[97.204481] (-) TimerEvent: {}
+[97.353488] (-) TimerEvent: {}
+[97.548060] (-) TimerEvent: {}
+[97.675087] (-) TimerEvent: {}
+[97.775965] (-) TimerEvent: {}
+[97.879110] (-) TimerEvent: {}
+[97.979505] (-) TimerEvent: {}
+[98.079912] (-) TimerEvent: {}
+[98.180610] (-) TimerEvent: {}
+[98.281073] (-) TimerEvent: {}
+[98.381849] (-) TimerEvent: {}
+[98.482325] (-) TimerEvent: {}
+[98.582700] (-) TimerEvent: {}
+[98.683182] (-) TimerEvent: {}
+[98.784220] (-) TimerEvent: {}
+[98.884912] (-) TimerEvent: {}
+[98.985255] (-) TimerEvent: {}
+[99.085761] (-) TimerEvent: {}
+[99.186268] (-) TimerEvent: {}
+[99.286634] (-) TimerEvent: {}
+[99.390031] (-) TimerEvent: {}
+[99.490576] (-) TimerEvent: {}
+[99.591000] (-) TimerEvent: {}
+[99.691626] (-) TimerEvent: {}
+[99.791999] (-) TimerEvent: {}
+[99.892529] (-) TimerEvent: {}
+[99.992892] (-) TimerEvent: {}
+[100.093408] (-) TimerEvent: {}
+[100.193751] (-) TimerEvent: {}
+[100.296213] (-) TimerEvent: {}
+[100.396664] (-) TimerEvent: {}
+[100.497134] (-) TimerEvent: {}
+[100.597635] (-) TimerEvent: {}
+[100.698059] (-) TimerEvent: {}
+[100.798457] (-) TimerEvent: {}
+[100.898879] (-) TimerEvent: {}
+[101.000123] (-) TimerEvent: {}
+[101.100476] (-) TimerEvent: {}
+[101.201008] (-) TimerEvent: {}
+[101.304127] (-) TimerEvent: {}
+[101.404517] (-) TimerEvent: {}
+[101.504983] (-) TimerEvent: {}
+[101.605330] (-) TimerEvent: {}
+[101.708208] (-) TimerEvent: {}
+[101.808570] (-) TimerEvent: {}
+[101.908933] (-) TimerEvent: {}
+[102.009334] (-) TimerEvent: {}
+[102.109690] (-) TimerEvent: {}
+[102.210067] (-) TimerEvent: {}
+[102.312125] (-) TimerEvent: {}
+[102.412484] (-) TimerEvent: {}
+[102.512853] (-) TimerEvent: {}
+[102.613284] (-) TimerEvent: {}
+[102.713775] (-) TimerEvent: {}
+[102.814162] (-) TimerEvent: {}
+[102.914757] (-) TimerEvent: {}
+[103.015118] (-) TimerEvent: {}
+[103.115470] (-) TimerEvent: {}
+[103.216051] (-) TimerEvent: {}
+[103.316676] (-) TimerEvent: {}
+[103.417528] (-) TimerEvent: {}
+[103.517927] (-) TimerEvent: {}
+[103.618358] (-) TimerEvent: {}
+[103.720140] (-) TimerEvent: {}
+[103.820774] (-) TimerEvent: {}
+[103.921086] (-) TimerEvent: {}
+[104.021426] (-) TimerEvent: {}
+[104.121807] (-) TimerEvent: {}
+[104.222255] (-) TimerEvent: {}
+[104.322590] (-) TimerEvent: {}
+[104.423020] (-) TimerEvent: {}
+[104.523385] (-) TimerEvent: {}
+[104.624134] (-) TimerEvent: {}
+[104.724555] (-) TimerEvent: {}
+[104.824902] (-) TimerEvent: {}
+[104.905110] (telemanipulator) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libpivot_to_twist.so\x1b[0m\n'}
+[104.925099] (-) TimerEvent: {}
+[105.027028] (-) TimerEvent: {}
+[105.127424] (-) TimerEvent: {}
+[105.227806] (-) TimerEvent: {}
+[105.328212] (-) TimerEvent: {}
+[105.429266] (-) TimerEvent: {}
+[105.534940] (-) TimerEvent: {}
+[105.635329] (-) TimerEvent: {}
+[105.735749] (-) TimerEvent: {}
+[105.836392] (-) TimerEvent: {}
+[105.937346] (-) TimerEvent: {}
+[106.037883] (-) TimerEvent: {}
+[106.138266] (-) TimerEvent: {}
+[106.238761] (-) TimerEvent: {}
+[106.339270] (-) TimerEvent: {}
+[106.460279] (-) TimerEvent: {}
+[106.567293] (-) TimerEvent: {}
+[106.667760] (-) TimerEvent: {}
+[106.768667] (-) TimerEvent: {}
+[106.869060] (-) TimerEvent: {}
+[106.969851] (-) TimerEvent: {}
+[107.070824] (-) TimerEvent: {}
+[107.172519] (-) TimerEvent: {}
+[107.272892] (-) TimerEvent: {}
+[107.373331] (-) TimerEvent: {}
+[107.474045] (-) TimerEvent: {}
+[107.521242] (telemanipulator) StdoutLine: {'line': b'[ 77%] Built target pivot_to_twist\n'}
+[107.574169] (-) TimerEvent: {}
+[107.675606] (-) TimerEvent: {}
+[107.707005] (telemanipulator) StdoutLine: {'line': b'[100%] Built target keyboard_as_pivot_input\n'}
+[107.739799] (telemanipulator) CommandEnded: {'returncode': 0}
+[107.775796] (-) TimerEvent: {}
+[107.879961] (-) TimerEvent: {}
+[107.883109] (telemanipulator) JobProgress: {'identifier': 'telemanipulator', 'progress': 'install'}
+[107.886837] (telemanipulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lijiaqian/prak_ws/build/telemanipulator'], 'cwd': '/home/lijiaqian/prak_ws/build/telemanipulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,504975,0'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en'), ('USER', 'lijiaqian'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1818'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/lijiaqian/prak_ws/install/pivot_msg/lib:/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib:/home/lijiaqian/prak_ws/install/telemanipulator/libs:/home/lijiaqian/prak_ws/install/telemanipulator/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse/lib:/home/lijiaqian/ws_ros2/install/warehouse_ros/lib:/home/lijiaqian/ws_ros2/install/transmission_interface/lib:/home/lijiaqian/ws_ros2/install/test_robot_hardware/lib:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_servo/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group/lib:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl/lib:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_planning/lib:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor/lib:/home/lijiaqian/ws_ros2/install/moveit_kinematics/lib:/home/lijiaqian/ws_ros2/install/moveit_core/lib:/home/lijiaqian/ws_ros2/install/srdfdom/lib:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller/lib:/home/lijiaqian/ws_ros2/install/joint_state_controller/lib:/home/lijiaqian/ws_ros2/install/diff_drive_controller/lib:/home/lijiaqian/ws_ros2/install/controller_manager/lib:/home/lijiaqian/ws_ros2/install/controller_interface/lib:/home/lijiaqian/ws_ros2/install/hardware_interface/lib:/home/lijiaqian/ws_ros2/install/geometric_shapes/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lijiaqian'), ('OLDPWD', '/home/lijiaqian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1641'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lijiaqian/prak_ws/install:/home/lijiaqian/ws_ros2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lijiaqian'), ('JOURNAL_STREAM', '9:54060'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'lijiaqian'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lijiaqian/ws_ros2/install/moveit_core/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/eclipse:/home/lijiaqian/clion-2020.2.4/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1853,unix/ubuntu:/tmp/.ICE-unix/1853'), ('INVOCATION_ID', '1441d1e17fcb45af882beecf4511c2b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/25f9744c_89cc_4136_a129_39ef3f97d97e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.840'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lijiaqian/prak_ws/build/telemanipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9ab2164c05930b7920bdb14e5ff220eb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lijiaqian/prak_ws/install/pivot_msg/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/lijiaqian/prak_ws/install/telemanipulator/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo/lib/python3.8/site-packages:/home/lijiaqian/ws_ros2/install/moveit_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%5'), ('CMAKE_PREFIX_PATH', '/home/lijiaqian/prak_ws/install/pivot_msg:/home/lijiaqian/prak_ws/install/tutorial_interfaces:/home/lijiaqian/prak_ws/install/telemanipulator:/home/lijiaqian/prak_ws/install/panda_description:/home/lijiaqian/ws_ros2/install/warehouse_ros_mongo:/home/lijiaqian/ws_ros2/install/moveit_ros_visualization:/home/lijiaqian/ws_ros2/install/moveit_ros_benchmarks:/home/lijiaqian/ws_ros2/install/moveit_ros_warehouse:/home/lijiaqian/ws_ros2/install/warehouse_ros:/home/lijiaqian/ws_ros2/install/ros2_control:/home/lijiaqian/ws_ros2/install/transmission_interface:/home/lijiaqian/ws_ros2/install/test_robot_hardware:/home/lijiaqian/ws_ros2/install/run_moveit_cpp:/home/lijiaqian/ws_ros2/install/run_move_group:/home/lijiaqian/ws_ros2/install/moveit_simple_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_servo:/home/lijiaqian/ws_ros2/install/moveit_ros_robot_interaction:/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface:/home/lijiaqian/ws_ros2/install/moveit_ros_move_group:/home/lijiaqian/ws_ros2/install/moveit_planners_ompl:/home/lijiaqian/ws_ros2/install/moveit_fake_controller_manager:/home/lijiaqian/ws_ros2/install/moveit_ros_planning:/home/lijiaqian/ws_ros2/install/moveit_ros_occupancy_map_monitor:/home/lijiaqian/ws_ros2/install/moveit_kinematics:/home/lijiaqian/ws_ros2/install/moveit_core:/home/lijiaqian/ws_ros2/install/srdfdom:/home/lijiaqian/ws_ros2/install/fake_joint_driver:/home/lijiaqian/ws_ros2/install/ros2_controllers:/home/lijiaqian/ws_ros2/install/moveit_resources:/home/lijiaqian/ws_ros2/install/moveit_resources_pr2_description:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_panda_description:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_moveit_config:/home/lijiaqian/ws_ros2/install/moveit_resources_fanuc_description:/home/lijiaqian/ws_ros2/install/moveit_msgs:/home/lijiaqian/ws_ros2/install/moveit_common:/home/lijiaqian/ws_ros2/install/joint_trajectory_controller:/home/lijiaqian/ws_ros2/install/joint_state_controller:/home/lijiaqian/ws_ros2/install/diff_drive_controller:/home/lijiaqian/ws_ros2/install/controller_manager:/home/lijiaqian/ws_ros2/install/controller_interface:/home/lijiaqian/ws_ros2/install/hardware_interface:/home/lijiaqian/ws_ros2/install/geometric_shapes:/opt/ros/foxy')]), 'shell': False}
+[107.919123] (telemanipulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[107.923550] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libkey_to_servo.so\n'}
+[107.930359] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libkeyboard_as_pivot_input.so\n'}
+[107.931739] (telemanipulator) StdoutLine: {'line': b'-- Installing: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_to_twist.so\n'}
+[107.944479] (telemanipulator) StdoutLine: {'line': b'-- Set runtime path of "/home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_to_twist.so" to ""\n'}
+[107.947506] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/lib/libpivot_transform.so\n'}
+[107.947789] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include\n'}
+[107.949548] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/homogeneous_matrix.h\n'}
+[107.950555] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/telemanipulator\n'}
+[107.952311] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/include/pivot_transformation.h\n'}
+[107.953997] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch\n'}
+[107.955185] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/controll_loop.launch.py\n'}
+[107.955548] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/control_3.launch.py\n'}
+[107.955922] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/launch/control_ros2.launch.py\n'}
+[107.956326] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config\n'}
+[107.957492] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config_2.yaml\n'}
+[107.958849] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config2.yaml\n'}
+[107.959297] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/config/panda_simulated_config.yaml\n'}
+[107.959620] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/msg\n'}
+[107.964028] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/msg/Pivot.msg\n'}
+[107.968215] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/package_run_dependencies/telemanipulator\n'}
+[107.969375] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/parent_prefix_path/telemanipulator\n'}
+[107.975579] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/ament_prefix_path.sh\n'}
+[107.976607] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/ament_prefix_path.dsv\n'}
+[107.976949] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/path.sh\n'}
+[107.978710] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/environment/path.dsv\n'}
+[107.980208] (-) TimerEvent: {}
+[107.980389] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.bash\n'}
+[107.980518] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.sh\n'}
+[107.980875] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.zsh\n'}
+[107.981043] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/local_setup.dsv\n'}
+[107.981160] (telemanipulator) StdoutLine: {'line': b'-- Installing: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/package.dsv\n'}
+[107.981272] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/packages/telemanipulator\n'}
+[107.981399] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/ament_index/resource_index/rclcpp_components/telemanipulator\n'}
+[107.983844] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/cmake/telemanipulatorConfig.cmake\n'}
+[107.987614] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/cmake/telemanipulatorConfig-version.cmake\n'}
+[107.987737] (telemanipulator) StdoutLine: {'line': b'-- Up-to-date: /home/lijiaqian/prak_ws/install/telemanipulator/share/telemanipulator/package.xml\n'}
+[107.987836] (telemanipulator) CommandEnded: {'returncode': 0}
+[108.080518] (-) TimerEvent: {}
+[108.154030] (telemanipulator) JobEnded: {'identifier': 'telemanipulator', 'rc': 0}
+[108.156460] (-) EventReactorShutdown: {}

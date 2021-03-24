@@ -1,0 +1,13 @@
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/install.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/key_to_servo.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/install/local.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/telemanipulator_uninstall.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/uninstall.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/pivot_to_twist.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/pivot_transform.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/test.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/keyboard_as_pivot_input.dir
+/home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug/CMakeFiles/list_install_components.dir

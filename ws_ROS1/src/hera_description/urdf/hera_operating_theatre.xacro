@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="hera_operating_theatre">
+
+  <!-- include the operating table macros -->
+  <xacro:include filename="$(find hera_description)/urdf/or_table/or_table.xacro"/>
+
+  <!-- include the robot macros -->
+  <xacro:include filename="$(find hera_description)/urdf/panda/panda.xacro"/>
+  <xacro:include filename="$(find hera_description)/urdf/hera.gazebo.xacro"/>
+
+  <!-- Include macros for panda tools -->
+  <xacro:include filename="$(find hera_description)/urdf/panda_tools/panda_tool.xacro" />
+
+  <!-- include the macro for the virtual walls -->
+  <xacro:include filename="$(find hera_description)/urdf/hera_virtual.xacro"/>
+
+  <!-- include the operating phantom macros -->
+  <xacro:include filename="$(find hera_description)/urdf/open_help_phantom/open_help_phantom.xacro"/>
+  <!--<xacro:include filename="$(find hera_description)/urdf/pig_phantom/pig_phantom.xacro"/>-->
+
+  <!--  arguments for the operating phantom macros -->
+  <xacro:property name="phantom_name" default="open_help_phantom"/>
+
+  <!--
+    Creates the full hera lab description, rooted in link world. Parameters:
+      - hardware_interface: The hardware interface to be used (and simulated) with the panda
+      - robot_name: Robot name of the panda manipulator (used for assigning joint + link names)
+      - panda_limit_file: Joint limits for the panda robot
+      - panda_tool: Name of the tool attached to the panda. Possible values: 'none', 'milc'. Default: 'milc'
+  -->
+  <xacro:macro name="hera_operating_theatre" params="hardware_interface robot_name
+    panda_limit_file:='$(find hera_description)/config/panda_limits.yaml'
+    panda_tool:='milc'">
+
+    <link name="world"/>
+
+    <!-- place the robot on the table -->
+    <xacro:property name="limits" value="${load_yaml(panda_limit_file)}" />
+    <xacro:panda hardware_interface="${hardware_interface}" robot_name="${robot_name}" parent="world"
+      joint_1_lower_limit="${limits['joint_1_lower_limit']}" joint_1_upper_limit="${limits['joint_1_upper_limit']}"
+      joint_2_lower_limit="${limits['joint_2_lower_limit']}" joint_2_upper_limit="${limits['joint_2_upper_limit']}"
+      joint_3_lower_limit="${limits['joint_3_lower_limit']}" joint_3_upper_limit="${limits['joint_3_upper_limit']}"
+      joint_4_lower_limit="${limits['joint_4_lower_limit']}" joint_4_upper_limit="${limits['joint_4_upper_limit']}"
+      joint_5_lower_limit="${limits['joint_5_lower_limit']}" joint_5_upper_limit="${limits['joint_5_upper_limit']}"
+      joint_6_lower_limit="${limits['joint_6_lower_limit']}" joint_6_upper_limit="${limits['joint_6_upper_limit']}"
+      joint_7_lower_limit="${limits['joint_7_lower_limit']}" joint_7_upper_limit="${limits['joint_7_upper_limit']}">
+
+      <!-- z is +1cm dues to mismatch in table stl -->
+      <!-- TODO: This is a freely chosen robot position for better manipulability close to the table. Figure out a better position (based on manipulability), create some mounting and fix this -->
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:panda>
+
+    <xacro:hera_gazebo robot_name="${robot_name}" />
+
+  </xacro:macro>
+
+</robot>
+

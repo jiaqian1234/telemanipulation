@@ -1,0 +1,2 @@
+hera_control:hera_description:hera_moveit_config:panda_controller
+-DCATKIN_DEVEL_PREFIX=/home/lijiaqian/ws/prak_ros1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lijiaqian/ws/prak_ros1_ws/install -G Unix Makefiles

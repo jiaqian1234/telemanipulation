@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find hera_description)/urdf/or_table/or_table.gazebo.xacro" />
+
+  <xacro:macro name="or_table" params="parent table_name *origin">
+
+    <!--joint between {parent} and or_table_link -->
+    <joint name="${parent}_${table_name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="or_table_link"/>
+    </joint>
+
+    <!-- table link -->
+    <link name="or_table_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/or_table.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/or_table_convex.dae"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="100"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+
+    <!-- joint between table link and left rail link -->
+    <joint name="or_table_rail_left_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0.07 -0.3267 0.7565"/>
+      <parent link="or_table_link"/>
+      <child link="or_table_rail_left_link"/>
+    </joint>
+
+    <!-- joint between table link and right rail link -->
+    <joint name="or_table_rail_right_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="0.07 0.3267 0.7565"/>
+      <parent link="or_table_link"/>
+      <child link="or_table_rail_right_link"/>
+    </joint>
+
+    <!-- left rail link -->
+    <link name="or_table_rail_left_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/or_table_rail.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/or_table_rail_convex.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="11.87"/>
+        <inertia ixx="0.01398" ixy="0.0" ixz="0.0" iyy="2.8641" iyz="0.0" izz="2.8585"/>
+      </inertial>
+    </link>
+
+    <!-- right rail link -->
+    <link name="or_table_rail_right_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/or_table_rail.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/or_table_rail_convex.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="11.87"/>
+        <inertia ixx="0.01398" ixy="0.0" ixz="0.0" iyy="2.8641" iyz="0.0" izz="2.8585"/>
+      </inertial>
+    </link>
+
+    <!-- right rail cap front link -->
+    <link name="or_table_rail_right_cap_front_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/rail_cap.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/rail_cap_convex.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.00001"/>
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+      </inertial>
+    </link>
+    <joint name="or_table_rail_right_cap_front_joint" type="fixed">
+      <origin rpy="${0.5*pi} 0 ${0.5*pi}" xyz="0.85 -0.03 -0.045"/>
+      <parent link="or_table_rail_right_link"/>
+      <child link="or_table_rail_right_cap_front_link"/>
+    </joint>
+
+    <!-- right rail cap end link -->
+    <link name="or_table_rail_right_cap_end_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/rail_cap.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/rail_cap_convex.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.00001"/>
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+      </inertial>
+    </link>
+    <joint name="or_table_rail_right_cap_end_joint" type="fixed">
+      <origin rpy="${0.5*pi} 0 ${-0.5*pi}" xyz="-0.85 0.03 -0.045"/>
+      <parent link="or_table_rail_right_link"/>
+      <child link="or_table_rail_right_cap_end_link"/>
+    </joint>
+
+    <!-- left rail cap front link -->
+    <link name="or_table_rail_left_cap_front_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/rail_cap.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/rail_cap_convex.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.00001"/>
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+      </inertial>
+    </link>
+    <joint name="or_table_rail_left_cap_front_joint" type="fixed">
+      <origin rpy="${0.5*pi} 0 ${0.5*pi}" xyz="0.85 -0.03 -0.045"/>
+      <parent link="or_table_rail_left_link"/>
+      <child link="or_table_rail_left_cap_front_link"/>
+    </joint>
+
+    <!-- left rail cap end link -->
+    <link name="or_table_rail_left_cap_end_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/visual/rail_cap.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/or_table/collision/rail_cap_convex.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.00001"/>
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+      </inertial>
+    </link>
+    <joint name="or_table_rail_left_cap_end_joint" type="fixed">
+      <origin rpy="${0.5*pi} 0 ${-0.5*pi}" xyz="-0.85 0.03 -0.045"/>
+      <parent link="or_table_rail_left_link"/>
+      <child link="or_table_rail_left_cap_end_link"/>
+    </joint>
+
+
+
+    <!--Extensions -->
+    <xacro:or_table_gazebo table_name="${table_name}" />
+
+  </xacro:macro>
+
+</robot>
+

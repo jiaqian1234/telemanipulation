@@ -1,0 +1,15 @@
+[ 22%] Built target key_to_servo
+[ 55%] Built target pivot_transform
+[ 77%] Built target keyboard_as_pivot_input
+[35m[1mScanning dependencies of target pivot_to_twist[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o[0m
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:[m[K In member function ‘[01m[Kvoid telemanipulator::PivotToTwist::twist_pub()[m[K’:
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:189:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktwist_msg[m[K’
+  189 |             twist_msg->twist.linear.x = (translation[0] - ee_position[0])
+      |                                                                          [01;31m[K^[m[K
+      |                                                                          [32m[K;[m[K
+  190 |             [32m[Ktwist_msg[m[K->twist.linear.y = (translation[1] - ee_position[1])
+      |             [32m[K~~~~~~~~~[m[K                                                     
+make[2]: *** [CMakeFiles/pivot_to_twist.dir/build.make:63: CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/pivot_to_twist.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

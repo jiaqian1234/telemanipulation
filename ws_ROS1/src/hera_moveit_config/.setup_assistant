@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: hera_description
+    relative_path: urdf/hera_main.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/hera_operating_theatre.srdf.xacro
+  CONFIG:
+    author_name: Paul Maria Scheikl
+    author_email: paul.scheikl@kit.edu
+    generated_timestamp: 1578504790

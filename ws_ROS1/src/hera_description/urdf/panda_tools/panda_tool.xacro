@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include the macros for the possible tools -->
+  <xacro:include filename="$(find hera_description)/urdf/panda_tools/milc/milc.xacro" />
+  <xacro:include filename="$(find hera_description)/urdf/panda_tools/physical_milc/physical_milc.xacro" />
+
+  <!--
+    Adds the description for a tool to the panda arm. Paramaters:
+      - tool: Type of tool to get attached. Possible values: 'none', 'milc', 'physical_milc'
+      - name: Name to be used for the tool (used for link and joint naming)
+      - prefix: Prefix to be used for link and joint naming
+      - parent: Parent link to attach to
+      - hardware_interface: Hardware interface to use (and simulate)
+  -->
+  <xacro:macro name="panda_tool" params="tool name prefix parent hardware_interface">
+
+    <!-- Add milc -->
+    <xacro:if value="${tool == 'milc'}">
+      <xacro:milc laparoscope_name="${name}" prefix="${prefix}" parent="${parent}" hardware_interface="${hardware_interface}" />
+    </xacro:if>
+
+    <!-- Add physical milc -->
+    <xacro:if value="${tool == 'physical_milc'}">
+      <xacro:physical_milc laparoscope_name="${name}" prefix="${prefix}" parent="${parent}" hardware_interface="${hardware_interface}" />
+    </xacro:if>
+
+    <!-- Do noting in case of none -->
+  </xacro:macro>
+
+</robot>

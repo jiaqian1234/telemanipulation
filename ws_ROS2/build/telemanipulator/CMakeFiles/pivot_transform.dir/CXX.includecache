@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lijiaqian/prak_ws/src/telemanipulator/include/homogeneous_matrix.h
+array
+-
+
+/home/lijiaqian/prak_ws/src/telemanipulator/include/pivot_transformation.h
+homogeneous_matrix.h
+/home/lijiaqian/prak_ws/src/telemanipulator/include/homogeneous_matrix.h
+
+/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_transformation.cpp
+../include/pivot_transformation.h
+/home/lijiaqian/prak_ws/src/telemanipulator/include/pivot_transformation.h
+math.h
+-
+array
+-
+cmath
+-
+iostream
+-
+

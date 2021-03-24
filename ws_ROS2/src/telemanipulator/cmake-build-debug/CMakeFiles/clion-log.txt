@@ -1,0 +1,18 @@
+/home/lijiaqian/clion-2020.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lijiaqian/prak_ws/src/telemanipulator
+-- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.2.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 2.2.0 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found std_srvs: 2.0.3 (/opt/ros/foxy/share/std_srvs/cmake)
+-- Found control_msgs: 2.4.1 (/opt/ros/foxy/share/control_msgs/cmake)
+-- Found moveit_msgs: 2.0.0 (/home/lijiaqian/ws_ros2/install/moveit_msgs/share/moveit_msgs/cmake)
+-- Found pivot_msg: 0.0.0 (/home/lijiaqian/prak_ws/install/pivot_msg/share/pivot_msg/cmake)
+-- Found moveit_ros_planning_interface: 2.1.0 (/home/lijiaqian/ws_ros2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lijiaqian/prak_ws/src/telemanipulator/cmake-build-debug

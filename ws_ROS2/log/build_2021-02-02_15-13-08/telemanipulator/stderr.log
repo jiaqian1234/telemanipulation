@@ -1,0 +1,4 @@
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:[m[K In member function ‘[01m[Kdouble telemanipulator::PivotToTwist::write_result(Eigen::Vector3d&, std::ofstream&)[m[K’:
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:231:9:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  231 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K

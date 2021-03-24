@@ -1,0 +1,4 @@
+Invoking command in '/home/lijiaqian/prak_ws/build/panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/panda_description -- -j3 -l3
+Invoked command in '/home/lijiaqian/prak_ws/build/panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/panda_description -- -j3 -l3
+Invoking command in '/home/lijiaqian/prak_ws/build/panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lijiaqian/prak_ws/build/panda_description
+Invoked command in '/home/lijiaqian/prak_ws/build/panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/lijiaqian/prak_ws/build/panda_description

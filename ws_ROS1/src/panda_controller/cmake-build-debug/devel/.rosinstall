@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lijiaqian/ws/prak_ros1_ws/src/panda_controller/cmake-build-debug/devel/setup.sh

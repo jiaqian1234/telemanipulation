@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="or_table_gazebo" params="table_name">
+    
+    <!-- or_table_link-->
+    <gazebo reference="or_table_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- left or_table_rail_link-->
+    <gazebo reference="or_table_rail_left_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- right or_table_rail_link-->
+    <gazebo reference="or_table_rail_right_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- or_table_rail_right_cap_front_link-->
+    <gazebo reference="or_table_rail_right_cap_front_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- or_table_rail_right_cap_end_link-->
+    <gazebo reference="or_table_rail_right_cap_end_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- or_table_rail_left_cap_front_link-->
+    <gazebo reference="or_table_rail_left_cap_front_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+    <!-- or_table_rail_left_cap_end_link-->
+    <gazebo reference="or_table_rail_left_cap_end_link">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+    </gazebo>
+
+
+  </xacro:macro>
+
+</robot>
+

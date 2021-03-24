@@ -1,0 +1,10 @@
+[0.050s] Invoking command in '/home/lijiaqian/prak_ws/build/pivot_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lijiaqian/prak_ws/build/pivot_msg -- -j3 -l3
+[0.324s] [  3%] Built target pivot_msg__cpp
+[0.349s] [ 12%] Built target pivot_msg__rosidl_generator_c
+[0.383s] make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/build.make:123: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+[0.386s] make[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/pivot_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[0.386s] make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/build.make:110: CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/depend] Interrupt
+[0.387s] make[1]: *** [CMakeFiles/Makefile2:464: CMakeFiles/pivot_msg__rosidl_typesupport_cpp.dir/all] Interrupt
+[0.387s] make[2]: *** [CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/build.make:115: CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/depend] Interrupt
+[0.387s] make[1]: *** [CMakeFiles/Makefile2:437: CMakeFiles/pivot_msg__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+[0.387s] make: *** [Makefile:141: all] Interrupt

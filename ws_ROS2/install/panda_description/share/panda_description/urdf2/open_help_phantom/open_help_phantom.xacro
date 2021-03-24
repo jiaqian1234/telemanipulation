@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find hera_description)/urdf/open_help_phantom/open_help_phantom.gazebo.xacro" />
+
+  <xacro:macro name="open_help_phantom" params="parent phantom_name *origin">
+
+    <!--joint between {parent} and open_help_phantom_link -->
+    <joint name="${parent}_${phantom_name}_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="open_help_phantom_link"/>
+    </joint>
+
+    <!-- link -->
+    <link name="open_help_phantom_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/open_help_phantom/visual/open_help_phantom.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://hera_description/meshes/open_help_phantom/collision/open_help_phantom.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="20"/>
+        <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+      </inertial>
+    </link>
+
+    <!--Extensions -->
+    <xacro:open_help_phantom_gazebo phantom_name="${phantom_name}" />
+
+  </xacro:macro>
+
+</robot>
+

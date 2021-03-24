@@ -1,0 +1,8 @@
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:[m[K In member function ‘[01m[Kdouble telemanipulator::PivotToTwist::calculate_angle(double, double)[m[K’:
+[01m[K/home/lijiaqian/prak_ws/src/telemanipulator/src/pivot_to_twiststamped.cpp:216:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kangle_1[m[K’
+  216 | 0.5 && std::abs(angle_1+M_PI)<0.5)[01;31m[K [m[K[32m[Kangle_1[m[K = angle_1 + 2*M_PI;
+      |                                   [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+      |                                   [32m[K;[m[K
+make[2]: *** [CMakeFiles/pivot_to_twist.dir/build.make:63: CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/pivot_to_twist.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

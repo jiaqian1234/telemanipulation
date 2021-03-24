@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="hera_operating_theatre">
+
+  <xacro:include filename="$(find hera_description)/urdf/hera_operating_theatre.xacro"/>
+
+  <xacro:arg name="hardware_interface" default="PositionJointInterface"/>
+  <xacro:arg name="robot_name" default="panda"/>
+  <xacro:arg name="panda_limit_file" default="$(find hera_description)/config/panda_limits.yaml" />
+  <xacro:arg name="panda_tool" default="milc" />
+
+  <xacro:hera_operating_theatre hardware_interface="$(arg hardware_interface)"
+    robot_name="$(arg robot_name)"
+    panda_limit_file="$(arg panda_limit_file)"
+    panda_tool="$(arg panda_tool)" />
+
+</robot>
+

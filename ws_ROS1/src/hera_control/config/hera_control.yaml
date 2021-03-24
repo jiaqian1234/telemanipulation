@@ -1,0 +1,85 @@
+/$(arg robot_name):
+
+  gazebo_ros_control:
+    pid_gains:
+      panda_joint_1: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_2: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_3: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_4: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_5: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_6: {p: 100.0, i: 0.01, d: 10.0}
+      panda_joint_7: {p: 100.0, i: 0.01, d: 10.0}
+      
+# Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 1000 # Pekel: 50 Hz
+    
+  
+  position_controller:
+    type: $(arg hardware_interface)/JointGroupPositionController
+    joints:
+      - $(arg robot_name)_joint_1
+      - $(arg robot_name)_joint_2
+      - $(arg robot_name)_joint_3
+      - $(arg robot_name)_joint_4
+      - $(arg robot_name)_joint_5
+      - $(arg robot_name)_joint_6
+      - $(arg robot_name)_joint_7
+
+    $(arg robot_name)_joint_1/pid: { p: 12000, d: 50, i: 0.0, i_clamp: 10000 }
+    $(arg robot_name)_joint_2/pid: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }
+    $(arg robot_name)_joint_3/pid: { p: 18000, d: 50, i: 0.01, i_clamp: 1 }
+    $(arg robot_name)_joint_4/pid: { p: 18000, d: 70, i: 0.01, i_clamp: 10000 }
+    $(arg robot_name)_joint_5/pid: { p: 12000, d: 70, i: 0.01, i_clamp: 1 }
+    $(arg robot_name)_joint_6/pid: { p: 7000, d: 50, i: 0.01, i_clamp: 1 }
+    $(arg robot_name)_joint_7/pid: { p: 2000, d: 20, i: 0.0, i_clamp: 1 }
+
+
+
+
+  # Trajectory Controllers ---------------------------------------
+# ? Forward Effort Controllers ?
+  trajectory_controller:
+    type: $(arg hardware_interface)/JointTrajectoryController
+    joints:
+        - $(arg robot_name)_joint_1
+        - $(arg robot_name)_joint_2
+        - $(arg robot_name)_joint_3
+        - $(arg robot_name)_joint_4
+        - $(arg robot_name)_joint_5
+        - $(arg robot_name)_joint_6
+        - $(arg robot_name)_joint_7
+        #- panda_milc_joint
+
+# TODO: These gains are not optimal
+    gains:
+        $(arg robot_name)_joint_1: { p: 12000, d: 50, i: 0.0, i_clamp: 10000 }
+        $(arg robot_name)_joint_2: { p: 30000, d: 100, i: 0.02, i_clamp: 10000 }
+        $(arg robot_name)_joint_3: { p: 18000, d: 50, i: 0.01, i_clamp: 1 }
+        $(arg robot_name)_joint_4: { p: 18000, d: 70, i: 0.01, i_clamp: 10000 }
+        $(arg robot_name)_joint_5: { p: 12000, d: 70, i: 0.01, i_clamp: 1 }
+        $(arg robot_name)_joint_6: { p: 7000, d: 50, i: 0.01, i_clamp: 1 }
+        $(arg robot_name)_joint_7: { p: 2000, d: 20, i: 0.0, i_clamp: 1 }
+
+    constraints:
+        goal_time: 2.0
+
+    state_publish_rate: 25 # TODO: maybe tune up to 1000?
+
+# Laparoscope controller ---------------------------------------------
+  EffortJointInterface_laparoscope_controller:
+    type: effort_controllers/JointTrajectoryController
+    joints:
+        - $(arg robot_name)_milc_optics_joint
+
+    gains:
+        $(arg robot_name)_milc_optics_joint: {p: 500,  d: 10, i: 2, i_clamp: 10}
+
+    constraints:
+        goal_time: 2.0
+
+    state_publish_rate: 25 # TODO: maybe tune up to 1000?
+    
+
+

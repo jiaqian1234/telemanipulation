@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- there are some arguments need to be passed to lauch file -->
+  <arg name="paused" default= "false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+	
+  <!-- load an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" default="$(arg use_sim_time)"/>
+    <arg name="gui" default="$(arg gui)"/>
+    <arg name="headless" default="$(arg headless)"/>
+    <arg name="debug" default="$(arg debug)"/>
+  </include>
+  
+  <arg name="description_file" default ="$(find hera_description)/urdf/panda/panda.xacro" doc="Xacro file to be used"/>
+  <arg name="hardware_interface" default="EffortJointInterface" doc="Hardware interface used in the urdf and simulated in gazebo"/>
+  <arg name="robot_name" default="panda" doc="Name of the mounted panda arm, used as prefix for all panda links and joints"/>
+  <!-- Load parameter -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg description_file)' hardware_interface:=$(arg hardware_interface) robot_name:=$(arg robot_name) " />
+
+  <!-- load the panda urdf into the gazebo -->
+  <!-- param name="robot_description" command="$(find xacro)/xacro inorder $(find hera_description)/urdf/panda/panda.xacro"/ -->
+
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+   args="-urdf -model panda -param robot_description"/> 	
+</launch>

@@ -1,0 +1,4 @@
+source;share/pivot_msg/environment/ament_prefix_path.sh
+source;share/pivot_msg/environment/library_path.sh
+source;share/pivot_msg/environment/path.sh
+source;share/pivot_msg/environment/pythonpath.sh

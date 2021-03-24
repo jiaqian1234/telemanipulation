@@ -1,0 +1,8 @@
+prefix=/home/lijiaqian/ws/prak_ros1_ws/devel
+
+Name: panda_controller
+Description: Description of panda_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

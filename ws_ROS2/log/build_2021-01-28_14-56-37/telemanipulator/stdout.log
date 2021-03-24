@@ -1,0 +1,5 @@
+[ 22%] Built target key_to_servo
+[ 55%] Built target pivot_transform
+[ 77%] Built target keyboard_as_pivot_input
+[35m[1mScanning dependencies of target pivot_to_twist[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/pivot_to_twist.dir/src/pivot_to_twiststamped.cpp.o[0m
