@@ -64,10 +64,10 @@ catmux_create_session control_pivot_ROS1_2.yaml
 ## Installation
 If you made sure all the Prerequisites are satisfied, the installation of this stack should be quite painless.
 ```bash
-cd ~/ws_ros1
+cd ~/ws_ROS1
 source /opt/ros/noetic/setup.bash
 catkin_make
-cd ~/ws_ros2
+cd ~/ws_ROS2
 source /opt/ros/foxy/setup.bash
 colcon build
 ```
