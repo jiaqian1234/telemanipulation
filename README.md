@@ -29,6 +29,46 @@ https://user-images.githubusercontent.com/65122353/112339433-f01ce600-8cbf-11eb-
 The simulation occurs also in the Gazebo based on ROS1 and ROS2. This time the input is in the form of a four elements vector (pan->pitch, tilt->yaw, spin->roll, depth->insertion). The end effector of the robot moves w.r.t reference coordinate at the pivot point.
 ![The-forceps-working-through-a-restrained-pivot-point-was-controlled-by-five-axes](https://user-images.githubusercontent.com/65122353/112367237-f8821a80-8cd9-11eb-8733-afe5e7066e31.png)
 
-
 ## Usage
+### Control simulated in the RVIZ ###
+```bash
+source /opt/ros/noetic/setup.bash
+source /telemanipulation/ws_ros2/devel/setup.bash
+roslaunch telemanipulation controll_loop.launch 
+```
+
+### Control w.r.t cartesian coordinate ###
+```bash
+cd catmux
+tmux
+catmux_create_session control_cartsian_ROS1_2.yaml
+```
+
+### Control w.r.t pivot coordinate ###
+```bash
+cd catmux
+tmux
+catmux_create_session control_pivot_ROS1_2.yaml
+```
+
+## Installation
+If you made sure all the Prerequisites are satisfied, the installation of this stack should be quite painless.
+```bash
+cd ~/ws_ros1
+source /opt/ros/noetic/setup.bash
+catkin_make
+cd ~/ws_ros2
+source /opt/ros/foxy/setup.bash
+colcon build
+```
+## Prerequisites
+The installation is based on Ubuntu 20.04
+### Install ros foxy ###
+https://docs.ros.org/en/foxy/Installation/Linux-Install-Binary.html
+### Install moveit 2 ###
+https://moveit.ros.org/install-moveit2/source/
+### Insstall ros noetix ###
+http://wiki.ros.org/noetic/Installation
+
+
 
