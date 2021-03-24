@@ -17,9 +17,11 @@ Demo
 https://user-images.githubusercontent.com/65122353/112301533-568f0d80-8c9a-11eb-8d4c-3c2d2145ee61.mp4
 
 ### Control w.r.t cartesian coordinate ###
-The simulation occurs in the Gazebo. The movei/servo module is developed unter ROS2, while the controller adapt to the Gazebo is based on the ROS1. Thus a bridge to connect ROS1 and ROS2 is necessary.
+The simulation occurs in the Gazebo. The movei/servo module is developed unter ROS2, while the controller adapt to the Gazebo is based on the ROS1. Thus a bridge to connect ROS1 and ROS2 is necessary.  
 rosgraph_ROS1
 ![rosgraph_ros1](https://user-images.githubusercontent.com/65122353/112305114-9bb53e80-8c9e-11eb-9b2f-a899b46732f5.png)
 rosgragh_ROS2
 ![rosgraph](https://user-images.githubusercontent.com/65122353/112305160-a96ac400-8c9e-11eb-98e6-c434fdece7dc.png)
 Demo
+https://user-images.githubusercontent.com/65122353/112339433-f01ce600-8cbf-11eb-8392-9a188ec65aee.mp4
+
