@@ -1,12 +1,22 @@
 # telemanipulation
 Control the end effctot of robot in real-time based on moveit/servo 
-1. Introduction
-   1. Control simulated in the RVIZ
-   1. Control based the cartesian coordinate
-   1. Control based the pivot coordinate
-1. Usage
-1. Installation
-1. Prerequisites
+- [telemanipulation](#telemanipulation)
+  * [Introduction](#introduction)
+    + [Control simulated in the RVIZ](#control-simulated-in-the-rviz)
+    + [Control w.r.t cartesian coordinate](#control-wrt-cartesian-coordinate)
+    + [Control w.r.t pivot coordinate](#control-wrt-pivot-coordinate)
+  * [Usage](#usage)
+    + [Control simulated in the RVIZ](#control-simulated-in-the-rviz-1)
+    + [Control w.r.t cartesian coordinate](#control-wrt-cartesian-coordinate-1)
+    + [Control w.r.t pivot coordinate](#control-wrt-pivot-coordinate-1)
+  * [Installation](#installation)
+  * [Prerequisites](#prerequisites)
+    + [Install ros foxy](#install-ros-foxy)
+    + [Install moveit 2](#install-moveit-2)
+    + [Insstall ros noetix](#insstall-ros-noetix)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Introduction
 
